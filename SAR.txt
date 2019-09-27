@@ -48,3 +48,30 @@ NOTES:
   they don't need help with the form that gets help to scholars that need it
   they want help with just figuring out the problem of self-censorship and seeing where it's happening/who it's affecting
   
+Where do we put the form?
+  on the website on "get involved" sections
+  on the website homepage
+  at conferences
+    also helps with the security aspect (harder to fake submit)
+  my ideas:
+    maybe on researchgate?
+    
+  
+Ideas:
+  webscrape to parse through news data automatically (maybe use NLP techniques)
+    then use that data to isolate patterns that help identify fake/real submissions
+  we can also use the gathered data to isolate similar patterns to identify fake/real submissions
+  use probabilities of fake/real data, conditioning on the web-parsing and previous data to weigh submissions by likeliness     that they're real
+  
+  create a global "academic freedom index"?
+    assess different countries based off web-parsing
+    also based off experts' advice
+    account for the data collected by our project
+    use this to rate the country on degree of self-censorship
+      help regional experts with what they do
+      
+      
+  security:
+    make sure data isn't faked
+    also make sure people can't steal the data
+  
