@@ -15,4 +15,9 @@ What they do:
     monitor and report attacks on education
   learning:
     bring ppl together to understand what academic freedom is
- 
+
+Scale is huge:
+  >500 institutions
+  >5,000 requests
+  >700 caseloads
+  
