@@ -1,0 +1,82 @@
+Shatterproof:
+
+New nonprofit
+Kirsten
+Jess
+
+Addiction related company
+- 400,000 deaths from overdose in 20 yrs
+- More Americans dying from drug overdoses than cars/gun violence
+
+Vision:
+- Unite millions of Americans within an org, reverse addiction crisis
+
+Want to:
+- Transform addiction treatment
+- Shatter stigma
+- Support & educate community
+- Advocacy & policy change
+
+Addiction is a disease
+
+Challenge Statement
+We need a virtual way to motivate and mobilize ppl to transform treatment, shatter stigma, support & edu, advocacy & policy change
+
+Goals: Grow movement, capture actions, drive donations
+
+
+Global Nomads Group:
+
+Seat at the table - invites young ppl to join conversations and connect across difference and distance
+Human centered design
+Working prototype
+Host conversations in the office
+1300+ youth in the community, 30 countries
+Youth brain trust
+
+Make a world that’s more trust and more humane
+
+Provide a solution
+
+- Video & audio
+- Flow of conversation
+- Different languages
+- Speed & immediacy of connection
+- Multiple time zones
+- Community safety
+- Implemented at low cost
+
+Challenge
+Needs scalable, global use, immediate authentic experience
+
+Connects up to 6 student to their peers across the world
+
+
+Scholars at Risk:
+
+International network of institutions and individuals whose mission it is to protect scholars and promote academic freedom
+
+SAR scholars: academics in different fields across the world (mostly middle eastern, central/east/southeast asian, sub-saharan Africa)
+
+Work with universities & networks
+Place at risk scholars in positions where they can research, continue to do work, teach, try to raise awareness, etc
+
+Helping hundreds of scholars, hard to keep track of incoming scholars, etc
+Investigate allegations of attacks, 
+
+The project: Combat self-censorship
+- Known attacks are only a fraction of all those intimidated or silenced
+- Rational actors witnessing theses attacks will “self-censor”, become bystanders
+- Self-censorship warps knowledge, limits people, and is hard to prove
+
+Challenges and needs:
+- Security of users/eporteres
+- Security and reliability of data
+- Generate a large response rate across countries (incl. low bandwidth)
+- Must be no cost for users/reports, low cost for SAR to maintain
+- Automated multilingual interface/data capture would be ideal
+- Simple, attractive visualization of data results would increase impact (useful for non-engineers -> make infographics)
+- Drive donations
+
+
+
