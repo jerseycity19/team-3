@@ -20,4 +20,24 @@ Scale is huge:
   >500 institutions
   >5,000 requests
   >700 caseloads
-  
+  only tip of iceberg
+
+Challenge:
+  most people seeing these attacks "self-censor"
+    self-censoring is when you don't say stuff because you know you'll get persecuted for it
+  when you see others getting persecuted, why would YOU do the same?
+  self-censorship warps knowledge
+  scope of self-censorship is MASSIVE
+    but if we can expose the scope of self-censorship, we can combat it
+      the issue is that it's rly hard and requires a lot of resources
+
+Statment:
+  Help us develop a digital vehicle that'll help get a better idea of what self-censorhip is, how it manifests, and who it affects
+  Security challenges:
+    ppl are scared to report for fear of being found out.
+    how to protect data so it doesn't get into bad hands
+  generate a large response rate:
+    incentivize?
+  must be FREE for users/reporters, and cheap for SAR
+  multilingual interface/data capture
+  simple, attractive visualization of data for non-tech people
