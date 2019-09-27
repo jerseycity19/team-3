@@ -41,3 +41,10 @@ Statment:
   must be FREE for users/reporters, and cheap for SAR
   multilingual interface/data capture
   simple, attractive visualization of data for non-tech people
+
+
+
+NOTES:
+  they don't need help with the form that gets help to scholars that need it
+  they want help with just figuring out the problem of self-censorship and seeing where it's happening/who it's affecting
+  
