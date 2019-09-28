@@ -1,6 +1,6 @@
 
 {
-    "title": "Willkommen zu react und react-i18next",
+    "title": "Willkommen zu unserer Selbstzensur-Studie!",
     "description": {
       "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> speicheren und neuladen.",
       "part2": "Ändere die Sprachen zwischen deutsch und englisch mit Hilfe der beiden Schalter."
@@ -57,7 +57,21 @@
     "somewhat": "Etwas empfindlich",
     "more": "Empfindlicher als die meisten",
     "extremely": "Sehr empfindlich"
-  }
+  }, 
+  "q1": "Wie oft haben Sie im letzten Jahr Ihren beruflichen Ausdruck selbst zensiert?",
+  "q2": "Wie viele Personen, die Sie kennen, mussten sich im letzten Jahr selbst zensieren?",
+  "q3": "Wie oft haben Sie im letzten Jahr Kollegen oder Studenten geraten, sich selbst zu zensieren?",
+  "q4": "Was ist die Hauptursache für Konsequenzen, die Sie befürchten, um sich selbst zu zensieren?",
+  "q5": "Haben Sie im letzten Jahr professionelle, rechtliche oder gewaltsame Vergeltungsmaßnahmen für Ihren beruflichen Ausdruck erlebt?",
+  "q6": "Hat jemand, den Sie kennen, im letzten Jahr eine professionelle, juristische oder gewaltsame Vergeltung für seinen professionellen Ausdruck erfahren?",
+  "q7": "Sind Sie heute im Vergleich zum Vorjahr mehr oder weniger geneigt, Ihren beruflichen Ausdruck selbst zu zensieren?",
+  "q-options": {
+    "never": "noch nie",
+    "sometimes": "Manchmal",
+    "frequently": "Häufig",
+    "all-the-time": "Die ganze Zeit"
+  }, 
+  "comments": "Haben Sie weitere Kommentare zu Ihrer Situation?"
 
 
 
