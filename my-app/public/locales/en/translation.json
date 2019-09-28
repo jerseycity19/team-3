@@ -57,5 +57,18 @@
     "more": "More sensitive than most",
     "extremely": "Extremely sensitive"
   },
+  "q1": "In the last year, how often have you self-censored your professional expression?",
+  "q2": "In the last year, how many people you know have had to self-censor themselves?",
+  "q3": "In the last year, how often have you advised colleagues or students to self-censor themselves?",
+  "q4": "What is the main source of consequences that you fear that would cause you to self-censor?",
+  "q5": "In the last year, have you experienced any professional, legal, or violent retaliation for your professional expression?",
+  "q6": "In the last year, has anybody you know experienced any professional, legal, or violent retaliation for their professional expression?",
+  "q7": "Compared to last year, are you more or less likely to self-censor your professional expression today?",
+  "q-options": {
+    "never": "Never",
+    "sometimes": "Sometimes",
+    "frequently": "Frequently",
+    "all-the-time": "All the time"
+  }, 
   "comments": "Do you have any other comments you want to provide about your situation?"
 }
