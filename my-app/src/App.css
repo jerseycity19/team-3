@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: fafdff;
+  
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -17,7 +19,7 @@
 }
 Navbar{
   color: antiquewhite;
-  height: 100px;
+  height: 90px;
 }
 .div-width{
   padding: 2px;
@@ -29,8 +31,19 @@ Navbar{
   border-radius: 20px;
 }
 .footer a{
-  text-decoration: none
+  text-decoration: none;
 }
-.footer a:hover{
-  color:
+footer {
+  margin-bottom: 0px;
+  padding-bottom: 0px
+}
+/* .footer a:hover{
+  color: 
+} */
+.logo_img{
+  width:400px ;
+  height:200px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
 }
