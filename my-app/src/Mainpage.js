@@ -20,7 +20,6 @@ class Mainpage extends Component {
                     <Button color="danger" size="lg">#put the informed consent button here</Button></div>
                     <br/><br/><br/><br/>
                 <CardFooter><FooterComponent/></CardFooter>
-                
             </div>
         );
     }

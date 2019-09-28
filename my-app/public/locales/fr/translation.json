@@ -1,8 +1,8 @@
 {
-  "title": "Welcome to react using react-i18next",
+  "title": "Willkommen, um mit react-i18next zu reagieren",
   "description": {
-    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
-    "part2": "Switch language between english and german using buttons above."
+    "part1": "Bearbeiten Sie zunächst <1> src / App.js </ 1> und speichern Sie die Datei, um sie neu zu laden.",
+    "part2": "Schalten Sie die Sprache zwischen Englisch und Deutsch mit den obigen Tasten um."
   },
   "user-id": "Identification de l'utilisateur",
   "user": {
@@ -12,50 +12,48 @@
     "non-university": "Non universitaire"
   },
   "age-range": "Tranche d'âge",
+  "age-options": {
+    "twenties": "20-29",
+    "thirties": "30-39",
+    "forties": "40-49",
+    "fifties": "50-59",
+    "sixties": "60-69",
+    "other": "70+"
+  },
   "gender": "genre",
   "gender-options": {
     "male": "Mâle",
     "female": "Femelle",
-    "non-binary": "Non-binary",
-    "other": "Other"
+    "non-binary": "Non binaire",
+    "other": "Autre"
   },
-  "country": "Country",
+  "country": "Pays",
   "country-options": {
-    "china": "China",
+    "china": "Chine",
     "turkey": "Turkey",
     "america": "USA",
-    "other": "Other"
+    "other": "Autre"
   },
-  "language": "Primary language",
-  "status": "Employment status",
+  "language": "Langue principale",
+  "status": "Statut d'emploi",
   "status-options": {
-    "part-time": "Part-time",
-    "full-time": "Full-time",
-    "part-time-no-contract": "Part-time & no contract",
-    "unemployed": "Unemployed"
+    "part-time": "À temps partiel",
+    "full-time": "À plein temps",
+    "part-time-no-contract": "Temps partiel et pas de contrat",
+    "unemployed": "Sans emploi"
   },
-  "discipline": "Discipline",
+  "discipline": "La discipline",
   "discipline-options": {
-    "natural-sciences": "Natural Sciences",
-    "social-sciences": "Social Sciences",
-    "arts-and-humanities": "Arts and Humanities",
-    "engineering": "Engineering"
+    "natural-sciences": "Sciences naturelles",
+    "social-sciences": "Sciences sociales",
+    "arts-and-humanities": "Arts et sciences humaines",
+    "engineering": "Ingénierie"
   },
-  "sensitivity": "How sensitive is your work?",
+  "sensitivity": "A quel point votre travail est-il sensible?",
   "sensitivity-options": {
-    "not-very": "Not very sensitive",
-    "somewhat": "Somewhat sensitive",
-    "more": "More sensitive than most",
-    "extremely": "Extremely sensitive"
-  },
-"age": "Age Range",
-  "agerange": {
-    "twenties": "20-29",
-    "thirties": "30-39",
-    "forties": "40-49",
-    "fifties":"50-59",
-    "sixties":"60-69",
-    "other": "70+"
-
+    "not-very": "Pas très sensible",
+    "somewhat": "Un peu sensible",
+    "more": " Plus sensible que la plupart",
+    "extremely": "Extrêmement sensible"
   }
 }
