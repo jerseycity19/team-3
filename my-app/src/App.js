@@ -348,8 +348,9 @@ function Page() {
     <div className="App">
       <select id="languageSelect" onChange={(e) => changeLanguage(e.target.value)} >
         <option value="en">English</option>
+        <option value="fr">French</option>
         <option value="de">German</option>
-        {/* <option value="C++" onChange={this.change}>C++</option> */}
+        <option value="sn">Spanish</option>
       </select>
       <Main t={t} i18n={i18n} />
     </div>
