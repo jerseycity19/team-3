@@ -123,7 +123,7 @@ class IForm extends Component {
                     <Trans i18nKey="age-options.sixties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check align="top-left" style={{ left: "35%"}, {verticalAlign:"top"}  }>
+                <FormGroup check align="left" style={{ left: "35%" }}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.other"></Trans>
