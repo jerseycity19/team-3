@@ -13,7 +13,7 @@ class Login extends Component {
         return (
         <Card>
             <CardBody>
-                
+
                 <div className="App">
                     <NavigationMenu/>
                     <br/>
@@ -25,9 +25,10 @@ class Login extends Component {
                     <input type="submit" value="Submit" /><br/>
                     <label>
                         Password:
-                    <input type="password" name="name" /><br/>
+                    		<input type="password" name="name" /><br/>
                     </label>
                     <input type="submit" value="Submit" /><br/>
+										<button href="/data"> Login </button>
                 </form>
                 </div>
             </CardBody>
