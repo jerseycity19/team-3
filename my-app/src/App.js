@@ -1,9 +1,11 @@
 //import React from 'react';
 import React, {Component} from 'react';
+import { Card, CardHeader, CardFooter, CardBody,
+  CardTitle, CardText } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import logo from './logo.svg';
 import './App.css';
 import {
-  Col,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -17,9 +19,26 @@ import {
   DropdownItem } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
+function FooterComponent(){
+  return(
+    <div className="footer">
+      <hr/>
+      <Container>
+        <Row>
+          <Col>.col</Col>
+        </Row>
+        <Row>
+          <Col xs="6"></Col>
+          <Col xs="6"></Col>
+        </Row>
+        </Container>
+    </div>
+  )
+}
+
 function NavigationMenu() {
   return (<div>
-<Navbar color="light" light expand="md">
+    <Navbar color="light" light expand="md">
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler/>
           <Collapse navbar>
@@ -68,7 +87,9 @@ class App extends Component {
   render() {
     return (
     <div className="App">
+      <Card>
       <NavigationMenu/>
+      <CardBody>
       
       <Form className="div-width">
         <FormGroup> 
@@ -142,6 +163,11 @@ class App extends Component {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </CardBody>
+      <CardFooter>
+        
+      </CardFooter>
+      </Card>
     </div>
     );
   }
