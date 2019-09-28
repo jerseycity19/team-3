@@ -21,6 +21,7 @@ import {
   DropdownItem
 } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 // ===============================================COMPONENTS=========================================================
 
@@ -316,7 +317,27 @@ function Page() {
 export default function App() {
   return (
     <Suspense fallback={<Loader />}>
-      <Page />
+      <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <Page />
+          </Route>
+          <Route path="/form">
+            <InputForm />
+          </Route>
+          {/* <Route path="/done">
+            <FormDone />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/data">
+            <DataVisualization />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
     </Suspense>
   );
 }
