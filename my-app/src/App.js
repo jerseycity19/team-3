@@ -66,7 +66,7 @@ class IForm extends Component {
                 <legend><Trans i18nKey="user-id"></Trans></legend>
                 <FormGroup check align="left" style={{ left: "35%" }}>
                   <Label check>
-                    <Input type="radio" name="userid" />{' '}
+                    <Input type="radio" name="userid" value={true} />{' '}
                     <Trans i18nKey="user.scholar"></Trans>
                   </Label>
                 </FormGroup>
