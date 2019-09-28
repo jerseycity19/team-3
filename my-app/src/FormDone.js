@@ -12,6 +12,7 @@ class FormDone extends Component {
             <div className="App">
                 <NavigationMenu/>
                 <p>Thank you for filling out the form!</p>
+                <p>To learn more about Scholars at Risk, please visit this link <a href="https://www.scholarsatrisk.org/">here</a>.</p>
             </div>
         );
     }
