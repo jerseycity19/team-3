@@ -38,7 +38,7 @@
   "language": "Lenguaje primario",
   "status": "Estado de Empleo",
   "status-options": {
-    "part-time": "Medio tiempo",
+    "part-time": "Medio Tiempo",
     "full-time": "Tiempo completo",
     "part-time-no-contract": "A tiempo parcial y sin contrato",
     "unemployed": "Desempleadas"
