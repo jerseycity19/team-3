@@ -23,6 +23,7 @@ import {
   DropdownItem
 } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 // ===============================================COMPONENTS=========================================================
 
@@ -223,7 +224,6 @@ const InputForm = withTranslation()(IForm);
 
 function NavigationMenu() {
   return (<div>
-<<<<<<< HEAD
 <Navbar color="light"  >
           <NavbarBrand 
            href="/">
@@ -233,10 +233,6 @@ function NavigationMenu() {
       Scholars at Risk
     </p>
           </NavbarBrand>
-=======
-    <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
->>>>>>> bb5a23a44bd4134fd1e57790d54c516a1f986229
           <NavbarToggler/>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
@@ -298,7 +294,6 @@ class Main extends Component {
   }
   render() {
     return (
-<<<<<<< HEAD
     <div className="App">
       <NavigationMenu/>
       
@@ -563,49 +558,45 @@ class Main extends Component {
             </Label>
           </FormGroup>
         </FormGroup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-      <div className="App">
-        <NavigationMenu />
-        <InputForm t={this.props.t} i18n={this.props.i18n} />
-      </div>
-    );
+        </Form>
+        </div>
+    )
   }
 }
->>>>>>> bb5a23a44bd4134fd1e57790d54c516a1f986229
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ===========================================PAGES=============================================================
 
@@ -631,7 +622,27 @@ function Page() {
 export default function App() {
   return (
     <Suspense fallback={<Loader />}>
-      <Page />
+      <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <Page />
+          </Route>
+          <Route path="/form">
+            <InputForm />
+          </Route>
+          {/* <Route path="/done">
+            <FormDone />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/data">
+            <DataVisualization />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
     </Suspense>
   );
 }
