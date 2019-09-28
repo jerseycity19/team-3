@@ -224,7 +224,6 @@ const InputForm = withTranslation()(IForm);
 
 function NavigationMenu() {
   return (<div>
-<<<<<<< HEAD
 <Navbar color="light"  >
           <NavbarBrand 
            href="/">
@@ -234,10 +233,6 @@ function NavigationMenu() {
       Scholars at Risk
     </p>
           </NavbarBrand>
-=======
-    <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
->>>>>>> bb5a23a44bd4134fd1e57790d54c516a1f986229
           <NavbarToggler/>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
@@ -299,7 +294,6 @@ class Main extends Component {
   }
   render() {
     return (
-<<<<<<< HEAD
     <div className="App">
       <NavigationMenu/>
       
@@ -564,49 +558,45 @@ class Main extends Component {
             </Label>
           </FormGroup>
         </FormGroup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-      <div className="App">
-        <NavigationMenu />
-        <InputForm t={this.props.t} i18n={this.props.i18n} />
-      </div>
-    );
+        </Form>
+        </div>
+    )
   }
 }
->>>>>>> bb5a23a44bd4134fd1e57790d54c516a1f986229
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ===========================================PAGES=============================================================
 
