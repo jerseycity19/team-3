@@ -54,7 +54,7 @@ class IForm extends Component {
 
     return (
       <div>
-        <h2>{t('title')} YERRRRRRRS</h2>
+        <h2>{t('title')}</h2>
 
         <Card>
           <CardBody>
@@ -129,7 +129,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="gender"></Trans></label>
+                <legend><Trans i18nKey="gender"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="gender" />{' '}
@@ -157,7 +157,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="country"></Trans></label>
+                <legend><Trans i18nKey="country"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="country" />
@@ -185,7 +185,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup>
-              <Trans i18nKey="language"></Trans>
+                <legend><Trans i18nKey="language"></Trans></legend>
                 <Input
                   style={{}}
                   onChangeText={(language) => this.setState({ language })}
@@ -193,7 +193,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="status"></Trans></label>
+                <legend><Trans i18nKey="status"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="status" />
@@ -222,7 +222,7 @@ class IForm extends Component {
 
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="discipline"></Trans></label>
+                <legend><Trans i18nKey="discipline"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="status" />
@@ -250,7 +250,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="sensitivity"></Trans></label>
+                <legend><Trans i18nKey="sensitivity"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -278,7 +278,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q1"></Trans></label>
+                <legend><Trans i18nKey="q1"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -306,7 +306,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q2"></Trans></label>
+                <legend><Trans i18nKey="q2"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -334,7 +334,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q3"></Trans></label>
+                <legend><Trans i18nKey="q3"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -362,7 +362,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q4"></Trans></label>
+                <legend><Trans i18nKey="q4"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -390,7 +390,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q5"></Trans></label>
+                <legend><Trans i18nKey="q5"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -418,7 +418,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q6"></Trans></label>
+                <legend><Trans i18nKey="q6"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -446,7 +446,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup tag="fieldset">
-                <label><Trans i18nKey="q7"></Trans></label>
+                <legend><Trans i18nKey="q7"></Trans></legend>
                 <FormGroup check>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
@@ -474,7 +474,7 @@ class IForm extends Component {
               </FormGroup>
 
               <FormGroup>
-              <Trans i18nKey="comments"></Trans>
+                <Trans i18nKey="comments"></Trans>
                 <Input
                   style={{}}
                   onChangeText={(comments) => this.setState({ comments })}
