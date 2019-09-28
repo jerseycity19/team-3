@@ -1,5 +1,5 @@
 {
-  "title": "Bienvenido a reaccionar usando react-i18next",
+  "title": "¡Bienvenido a nuestro estudio de autocensura!",
   "description": {
     "part1": "Para comenzar, edite <1> src / App.js </1> y guárdelo para volver a cargar.",
     "part2": "Cambie el idioma entre inglés y alemán con los botones de arriba."
@@ -43,7 +43,7 @@
     "part-time-no-contract": "A tiempo parcial y sin contrato",
     "unemployed": "Desempleadas"
   },
-  "discipline": "Discipline",
+  "discipline": "Tema",
   "discipline-options": {
     "natural-sciences": "Ciencias Naturales",
     "social-sciences": "Ciencias Sociales",
@@ -56,8 +56,19 @@
     "somewhat": "Algo sensible",
     "more": "Más sensible que la mayoría",
     "extremely": "Extremadamente sensitivo"
-  }
-
-
-
+  },
+  "q1": "¿En el último año, ¿con qué frecuencia ha autocensurado su expresión profesional?",
+  "q2": "¿En el último año, ¿cuántas personas que conoces han tenido que autocensurarse?",
+  "q3": "¿En el último año, ¿con qué frecuencia ha aconsejado a colegas o estudiantes que se autocensuren a sí mismos?",
+  "q4": "¿Cuál es la principal fuente de consecuencias que temes que te haga autocensurarte?",
+  "q5": "En el último año, ¿ha experimentado alguna represalia profesional, legal o violenta por su expresión profesional?",
+  "q6": "En el último año, ¿alguien que usted conoce ha sufrido represalias profesionales, legales o violentas por su expresión profesional?",
+  "q7": "En comparación con el año pasado, ¿tiene más o menos probabilidades de autocensurar su expresión profesional hoy?",
+  "q-options": {
+    "never": "Nunca",
+    "sometimes": "A veces",
+    "frequently": "Frecuentemente",
+    "all-the-time": "Todo el tiempo"
+  }, 
+  "comments": "¿Tiene algún otro comentario que quiera dar sobre su situación?"
 }
