@@ -25,7 +25,7 @@ def metric(x1, x2,  x3,  x4,  x5,  x6,  x7):
 adjectives = ['happy', 'scared', 'fearful', 'safe', 'free', 'sad', 'angry', 'resentful', 'excited', 'jubilant', 'consternated', 'elated', 'blank']
 pronouns = ['I', 'he', 'she', 'they', 'we']
 verbs = [('am', 'is', 'are'),
-		 ('worry', 'worries'),
+		 ('worry', 'worries', 'worry'),
 		 ('hate', 'hates', 'hate'),
 		 ('feel', 'feels', 'feel')]
 
@@ -33,6 +33,7 @@ verbs = [('am', 'is', 'are'),
 list = []
 for _ in range(100):
 	i = choose(5)
+	#print(i, (i+1)//2)
 	sentence = pronouns[i] + ' ' + rand.choice(verbs)[(i+1)//2] + ' ' + rand.choice(adjectives)
 	list += [(choose(4), choose(6), choose(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")),
          	rand.choice(("English", "French", "German", "Arabic", "Turkish")), choose(5), choose(9), choose(4),
