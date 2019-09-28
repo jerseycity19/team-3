@@ -12,6 +12,15 @@
     "non-university": "Non-university"
   },
   "age-range": "Age range",
+  "age-options": {
+    "twenties": "20-29",
+    "thirties": "30-39",
+    "forties": "40-49",
+    "fifties":"50-59",
+    "sixties":"60-69",
+    "other": "70+"
+
+  },
   "gender": "Gender",
   "gender-options": {
     "male": "Male",
@@ -48,4 +57,7 @@
     "more": "More sensitive than most",
     "extremely": "Extremely sensitive"
   }
+
+
+
 }
