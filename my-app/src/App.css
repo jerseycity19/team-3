@@ -13,20 +13,16 @@
   padding: 20px;
   color: white;
 }
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-link {
+  color: #09d3ac;
 }
 .div-width{
-  /* width: 100%; */
-  /* padding: 20px; */
-  margin-right: 10em;
-  margin-left: 10em;
-  /* align-items: center; */
-
+  margin-right: 20em;
+  margin-left: 20em;
+}
+.footer a{
+  text-decoration: none
+}
+.footer a:hover{
+  color:
 }
