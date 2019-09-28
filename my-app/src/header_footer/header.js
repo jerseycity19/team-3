@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import SARlogo from '../SARlogo.png'
 import '../App.css';
 import {
@@ -22,10 +21,10 @@ class NavigationMenu extends Component {
       <div>
         <img className="logo_img" src={SARlogo} />
         <Navbar color="dark" dark expand="lg" >
-          <NavbarBrand href="/">Scholars At<br /> Risk</NavbarBrand>
+          <NavbarBrand href="/">Scholars At Risk</NavbarBrand>
           <NavbarToggler />
           <Collapse navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto" Navbar>
               <NavItem>
                 <NavLink href='https://www.scholarsatrisk.org/'>SAR Site</NavLink>
               </NavItem>

@@ -8,6 +8,10 @@ import Age from "./Age.png";
 import Gender from "./Gender.png";
 import Language from "./Language.png";
 import UserID from "./UserID.png";
+<<<<<<< HEAD
+=======
+import Sentiment from "./Sentiment.png";
+>>>>>>> master
 import { Agent } from 'http';
 
 class Data extends Component {
@@ -34,6 +38,13 @@ class Data extends Component {
                         <img src={UserID} />
                     </div>
                     <br/>
+<<<<<<< HEAD
+=======
+                    <div className="sentiment_graph">
+                        <img src={Sentiment} />
+                    </div>
+                    <br/>
+>>>>>>> master
                     {/* <div className="age_graph">
                         <img src={} />
                     </div> */}
