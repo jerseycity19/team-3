@@ -1,6 +1,22 @@
 import pyodbc
 import random as rand
 
+
+drivers = [item for item in pyodbc.drivers()]
+#driver = drivers[-1]
+drivers = '/etc/odbcinst.ini'
+print(drivers)
+driver = '/usr/lib/odbc/libtdsodbc.so'
+print("driver:{}".format(driver))
+server = 'team3-sar-cfg.database.windows.net'
+database = 'SARdata'
+uid = 'team3rocks'
+pwd = 'Codeforgood2019'
+con_string ='DRIVER={driver};SERVER={server};DATABASE={database};UID={uid};PWD={pwd}'
+print(con_string)
+#conn = pyodbc.connect(con_string)
+
+
 def idgaf(n):
     return rand.choice(range(n))
 
@@ -8,19 +24,19 @@ def meme(a):
     return (3 * a^2 - 7 * a + 4)/2
 
 def metric(x1, x2,  x3,  x4,  x5,  x6,  x7):
-    return sum(x1/3, x2/3, x3/3, meme(x5)/2, meme(x6)/2, meme(x7)/2)    
+    return sum(x1/3, x2/3, x3/3, meme(x5)/2, meme(x6)/2, meme(x7)/2)
 
-conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=team3-sar-cfg.database.windows.net;'
-                      'Database=SARdata;'
-                      'Trusted_Connection=yes;')
+#conn = pyodbc.connect('Driver={SQL Server};'
+#                      'Server=team3-sar-cfg.database.windows.net;'
+#                      'Database=SARdata;'
+#                      'Trusted_Connection=yes;')
 
 cursor = conn.cursor()
 cursor.execute('SELECT * FROM SARdata.dbo.UserData')
 
 for i in range(100):
-    n = (idgaf(4), idgaf(6), idgaf(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")), 
-        rand.choice(("English", "French", "German", "Arabic", "Turkish")), idgaf(5), idgaf(9), idgaf(4), 
+    n = (idgaf(4), idgaf(6), idgaf(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")),
+        rand.choice(("English", "French", "German", "Arabic", "Turkish")), idgaf(5), idgaf(9), idgaf(4),
         idgaf(4), idgaf(4), idgaf(4), idgaf(8), idgaf(3), idgaf(3), idgaf(3))
     cursor.execute('''
                     INSERT INTO SARdata.dbo.UserData (UserID, Age, Gender, Country,
