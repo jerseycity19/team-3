@@ -61,25 +61,25 @@ class IForm extends Component {
             <Form className="div-width">
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="user-id"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="userid" />{' '}
                     <Trans i18nKey="user.scholar"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="userid" />{' '}
                     <Trans i18nKey="user.student"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="userid" />{' '}
                     <Trans i18nKey="user.administrator"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="userid" />{' '}
                     <Trans i18nKey="user.non-university"></Trans>
@@ -90,37 +90,37 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="age-range"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.twenties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.thirties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.forties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.fifties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.sixties"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="age" />{' '}
                     <Trans i18nKey="age-options.other"></Trans>
@@ -130,25 +130,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="gender"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="gender" />{' '}
                     <Trans i18nKey="gender-options.male"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="gender" />{' '}
                     <Trans i18nKey="gender-options.female"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="gender" />{' '}
                     <Trans i18nKey="gender-options.non-binary"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="gender" />{' '}
                     <Trans i18nKey="gender-options.other"></Trans>
@@ -158,25 +158,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="country"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="country" />
                     <Trans i18nKey="country-options.china"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="country-options.turkey"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="country-options.america"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="country-options.other"></Trans>
@@ -194,25 +194,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="status"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />
                     <Trans i18nKey="status-options.part-time"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="status-options.full-time"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="status-options.part-time-no-contract"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="status-options.unemployed"></Trans>
@@ -223,25 +223,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="discipline"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />
                     <Trans i18nKey="discipline-options.natural-sciences"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="discipline-options.social-sciences"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="discipline-options.arts-and-humanities"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="discipline-options.engineering"></Trans>
@@ -251,25 +251,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="sensitivity"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="sensitivity-options.not-very"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="sensitivity-options.somewhat"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="sensitivity-options.more"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="sensitivity-options.extremely"></Trans>
@@ -279,25 +279,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q1"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -307,25 +307,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q2"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -335,25 +335,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q3"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -363,25 +363,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q4"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -391,25 +391,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q5"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -419,25 +419,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q6"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
@@ -447,25 +447,25 @@ class IForm extends Component {
 
               <FormGroup tag="fieldset">
                 <legend><Trans i18nKey="q7"></Trans></legend>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />
                     <Trans i18nKey="q-options.never"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.sometimes"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.frequently"></Trans>
                   </Label>
                 </FormGroup>
-                <FormGroup check>
+                <FormGroup check align="left" style={{left: "35%"}}>
                   <Label check>
                     <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="q-options.all-the-time"></Trans>
