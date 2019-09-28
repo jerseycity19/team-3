@@ -29,6 +29,8 @@ verbs = [('am', 'is', 'are'),
 		 ('hate', 'hates', 'hate'),
 		 ('feel', 'feels', 'feel')]
 
+i = choose(5)
+sentence = pronouns[i] + ' ' + rand.choice(verbs)[(i+1)//2] + ' ' + rand.choice(adjectives)
 
 
 list = [(choose(4), choose(6), choose(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")),
