@@ -1,0 +1,74 @@
+{
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "user-id": "User identification",
+  "user": {
+    "scholar": "Scholar",
+    "student": "Student",
+    "administrator": "Administrator",
+    "non-university": "Non-university"
+  },
+  "age-range": "Age range",
+  "age-options": {
+    "twenties": "20-29",
+    "thirties": "30-39",
+    "forties": "40-49",
+    "fifties":"50-59",
+    "sixties":"60-69",
+    "other": "70+"
+
+  },
+  "gender": "Gender",
+  "gender-options": {
+    "male": "Male",
+    "female": "Female",
+    "non-binary": "Non-binary",
+    "other": "Other"
+  },
+  "country": "Country",
+  "country-options": {
+    "china": "China",
+    "turkey": "Turkey",
+    "america": "USA",
+    "other": "Other"
+  },
+  "language": "Primary language",
+  "status": "Employment status",
+  "status-options": {
+    "part-time": "Part-time",
+    "full-time": "Full-time",
+    "part-time-no-contract": "Part-time & no contract",
+    "unemployed": "Unemployed"
+  },
+  "discipline": "Discipline",
+  "discipline-options": {
+    "natural-sciences": "Natural Sciences",
+    "social-sciences": "Social Sciences",
+    "arts-and-humanities": "Arts and Humanities",
+    "engineering": "Engineering"
+  },
+  "sensitivity": "How sensitive is your work?",
+  "sensitivity-options": {
+    "not-very": "Not very sensitive",
+    "somewhat": "Somewhat sensitive",
+    "more": "More sensitive than most",
+    "extremely": "Extremely sensitive"
+  },
+  "q1": "In the last year, how often have you self-censored your professional expression?",
+  "q2": "In the last year, how many people you know have had to self-censor themselves?",
+  "q3": "In the last year, how often have you advised colleagues or students to self-censor themselves?",
+  "q4": "What is the main source of consequences that you fear that would cause you to self-censor?",
+  "q5": "In the last year, have you experienced any professional, legal, or violent retaliation for your professional expression?",
+  "q6": "In the last year, has anybody you know experienced any professional, legal, or violent retaliation for their professional expression?",
+  "q7": "Compared to last year, are you more or less likely to self-censor your professional expression today?",
+  "q-options": {
+    "never": "Never",
+    "sometimes": "Sometimes",
+    "frequently": "Frequently",
+    "all-the-time": "All the time"
+  }, 
+  "comments": "Do you have any other comments you want to provide about your situation?"
+}

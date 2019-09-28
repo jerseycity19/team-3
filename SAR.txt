@@ -65,6 +65,8 @@ Ideas:
   we can also use the gathered data to isolate similar patterns to identify fake/real submissions
   use probabilities of fake/real data, conditioning on the web-parsing and previous data to weigh submissions by likeliness     that they're real
 
+=======
+
   create a global "academic freedom index"?
     assess different countries based off web-parsing
     also based off experts' advice
@@ -73,6 +75,8 @@ Ideas:
       help regional experts with what they do
 
 
+
   security:
     make sure data isn't faked
     also make sure people can't steal the data
+

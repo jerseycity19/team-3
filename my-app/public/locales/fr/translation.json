@@ -1,0 +1,59 @@
+{
+  "title": "Willkommen, um mit react-i18next zu reagieren",
+  "description": {
+    "part1": "Bearbeiten Sie zunächst <1> src / App.js </ 1> und speichern Sie die Datei, um sie neu zu laden.",
+    "part2": "Schalten Sie die Sprache zwischen Englisch und Deutsch mit den obigen Tasten um."
+  },
+  "user-id": "Identification de l'utilisateur",
+  "user": {
+    "scholar": "le savant",
+    "student": "Étudiant / Étudiante",
+    "administrator": "Administratrice / Administrateur",
+    "non-university": "Non universitaire"
+  },
+  "age-range": "Tranche d'âge",
+  "age-options": {
+    "twenties": "20-29",
+    "thirties": "30-39",
+    "forties": "40-49",
+    "fifties": "50-59",
+    "sixties": "60-69",
+    "other": "70+"
+  },
+  "gender": "genre",
+  "gender-options": {
+    "male": "Mâle",
+    "female": "Femelle",
+    "non-binary": "Non binaire",
+    "other": "Autre"
+  },
+  "country": "Pays",
+  "country-options": {
+    "china": "Chine",
+    "turkey": "Turkey",
+    "america": "USA",
+    "other": "Autre"
+  },
+  "language": "Langue principale",
+  "status": "Statut d'emploi",
+  "status-options": {
+    "part-time": "À temps partiel",
+    "full-time": "À plein temps",
+    "part-time-no-contract": "Temps partiel et pas de contrat",
+    "unemployed": "Sans emploi"
+  },
+  "discipline": "La discipline",
+  "discipline-options": {
+    "natural-sciences": "Sciences naturelles",
+    "social-sciences": "Sciences sociales",
+    "arts-and-humanities": "Arts et sciences humaines",
+    "engineering": "Ingénierie"
+  },
+  "sensitivity": "A quel point votre travail est-il sensible?",
+  "sensitivity-options": {
+    "not-very": "Pas très sensible",
+    "somewhat": "Un peu sensible",
+    "more": " Plus sensible que la plupart",
+    "extremely": "Extrêmement sensible"
+  }
+}
