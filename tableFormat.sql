@@ -13,5 +13,6 @@ CREATE TABLE UserData (
     Q4 int,
     Q5 int,
     Q6 int,
-    Q7 int
+    Q7 int,
+    comments varchar
 );
