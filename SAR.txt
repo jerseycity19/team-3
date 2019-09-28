@@ -59,7 +59,8 @@ Where do we put the form?
 
 Ideas:
   webscrape to parse through news data automatically (maybe use NLP techniques)
-		could also run NLP algos
+		could also run NLP algos on things like user comments in the form
+			possibly use sentimental analysis?
     then use that data to isolate patterns that help identify fake/real submissions
   we can also use the gathered data to isolate similar patterns to identify fake/real submissions
   use probabilities of fake/real data, conditioning on the web-parsing and previous data to weigh submissions by likeliness     that they're real
