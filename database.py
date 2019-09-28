@@ -1,4 +1,8 @@
 import pyodbc
+import random as rand
+
+def idgaf(int n):
+    return rand.choice(range(n))
 
 def meme(int a):
     return (3 * a^2 - 7 * a + 4)/2
@@ -14,12 +18,15 @@ conn = pyodbc.connect('Driver={SQL Server};'
 cursor = conn.cursor()
 cursor.execute('SELECT * FROM SARdata.dbo.UserData')
 
-
-cursor.execute('''
-                INSERT INTO SARdata.dbo.UserData (UserID, Age, Gender, Country,
-                primaryLang, employmentStatus, discipline, workSensitivity,
-                Q1, Q2, Q3, Q4, Q5, Q6, Q7)
-                VALUES
-                (1, 3, 1, Syria, Arabic, 2, 1, 1, 0, 1, 0, 1, 0, 1, 0)
-                ''')
+for i in range(100):
+    n = (idgaf(4), idgaf(6), idgaf(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")), 
+        rand.choice(("English", "French", "German", "Arabic", "Turkish")), idgaf(5), idgaf(9), idgaf(4), 
+        idgaf(4), idgaf(4), idgaf(4), idgaf(8), idgaf(3), idgaf(3), idgaf(3))
+    cursor.execute('''
+                    INSERT INTO SARdata.dbo.UserData (UserID, Age, Gender, Country,
+                    primaryLang, employmentStatus, discipline, workSensitivity,
+                    Q1, Q2, Q3, Q4, Q5, Q6, Q7)
+                    VALUES ''' + n
+                    #(1, 3, 1, Syria, Arabic, 2, 1, 1, 0, 1, 0, 1, 0, 1, 0)
+                    )
 conn.commit()
