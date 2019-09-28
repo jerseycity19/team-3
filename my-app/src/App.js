@@ -49,90 +49,132 @@ class IForm extends Component {
       <div>
         <h2>{t('title')}YERRRRRRRS</h2>
         <Form className="div-width">
-          <FormGroup>
-            <Trans i18nKey="id"></Trans>
-            {/* <Trans for="exampleEmail" i18nKey="">User Identification</Trans> */}
-            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+          <FormGroup tag="fieldset">
+            <legend>User Identification</legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Scholar
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Student
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Administrator
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Non-University
+            </Label>
+            </FormGroup>
           </FormGroup>
 
           <FormGroup>
-            <Label for="examplePassword">Password</Label>
-            <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleSelect">Select</Label>
+            <Label for="exampleSelect">Age Range</Label>
             <Input type="select" name="select" id="exampleSelect">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <option>20-29</option>
+              <option>30-39</option>
+              <option>40-49</option>
+              <option>50-59</option>
+              <option>60-69</option>
+              <option>70+</option>
             </Input>
           </FormGroup>
-          <FormGroup>
-            <Label for="exampleSelectMulti">Select Multiple</Label>
-            <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </Input>
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleText">Text Area</Label>
-            <Input type="textarea" name="text" id="exampleText" />
-          </FormGroup>
-          <FormGroup>
-            <Label for="exampleFile">File</Label>
-            <Input type="file" name="file" id="exampleFile" />
-            <FormText color="muted">
-              This is some placeholder block-level help text for the above input.
-              It's a bit lighter and easily wraps to a new line.
-          </FormText>
-          </FormGroup>
+
           <FormGroup tag="fieldset">
-            <legend>Radio Buttons</legend>
+            <label> Gender</label>
             <FormGroup check>
               <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option one is this and that—be sure to include why it's great
+                <Input type="radio" name="gender" />{' '}
+                Male
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
-                <Input type="radio" name="radio1" />{' '}
-                Option two can be something else and selecting it will deselect option one
+                <Input type="radio" name="gender" />{' '}
+                Femal
             </Label>
             </FormGroup>
-            <FormGroup check disabled>
+            <FormGroup check>
               <Label check>
-                <Input type="radio" name="radio1" disabled />{' '}
-                Option three is disabled
+                <Input type="radio" name="gender" />{' '}
+                Non-Binary
             </Label>
             </FormGroup>
+
           </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="checkbox" />{' '}
-              Check me out
-          </Label>
+
+          <FormGroup>
+            <Label for="exampleSelect"> Country </Label>
+            <Input type="select" name="country" id="exampleSelect">
+              <option>Asia </option>
+              <option>Europe</option>
+              <option>North America</option>
+              <option>South America</option>
+
+            </Input>
+          </FormGroup>
+
+
+          <FormGroup>
+            <label> Professional Language</label>
+            <Input
+              style={{}}
+              onChangeText={(language) => this.setState({ language })}
+              value={this.state.language} />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="employment">Employment Status </Label>
+            <Input type="select" name="Employment Status" id="employment">
+              <option>Part-Time </option>
+              <option>Full-Time</option>
+              <option>Part-time & No Contract</option>
+              <option> Unemployed</option>
+
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Label for="Disciple"> Discipline Area </Label>
+            <Input type="select" name="disciple" id="Disciple">
+              <option>Natural Sciences</option>
+              <option>Social Sciences</option>
+              <option>Arts and Humanities</option>
+              <option> Engineering</option>
+
+            </Input>
+          </FormGroup>
+          <FormGroup>
+            <Label for="Sensitivity"> Sensitivity of Work </Label>
+            <Input type="select" name="Sensitivity" id="Sensitivity">
+              <option>Not very sensitive</option>
+              <option>Somewhat sensitive</option>
+              <option>More sensitive than most</option>
+              <option>Extremely sensitive</option>
+            </Input>
           </FormGroup>
           <Button>Submit</Button>
         </Form>
-        {/* <form> */}
+        {/* <form>
         <Trans>
           {t('id')}:
-          {/* <input type="text" name="name" value={id} onChange={this.handleChange}/> */}
           <input type="text" name="name" />
         </Trans>
         <Trans>
           {t('age-range')}:
-          {/* <input type="text" name="age-range" value={agerange} onChange={this.handleChange}/> */}
           <input type="text" name="age-range" />
         </Trans>
         <input type="submit" value="Submit" />
-        {/* </form> */}
+        </form> */}
       </div>
     );
   }
