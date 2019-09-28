@@ -27,6 +27,7 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-ro
 import Login from './Login';
 import Data from './Data';
 import FormDone from './FormDone';
+import Mainpage from './Mainpage';
 
 // ===============================================COMPONENTS=========================================================
 
@@ -173,6 +174,7 @@ class IForm extends Component {
 
                 </Input>
               </FormGroup>
+
               <FormGroup>
                 <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
                 <Input type="select" name="Sensitivity" id="Sensitivity">
@@ -182,6 +184,25 @@ class IForm extends Component {
                   <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
                 </Input>
               </FormGroup>
+
+              {/* start adding back page questions below: */}
+              {/* <FormGroup>
+                <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
+                <Input type="select" name="Sensitivity" id="Sensitivity">
+                  <option><Trans i18nKey="sensitivity-options.not-very"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.somewhat"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.more"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
+                </Input>
+              </FormGroup> */}
+              <FormGroup>
+                <label><Trans i18nKey="comments"></Trans></label>
+                <Input
+                  style={{}}
+                  onChangeText={(comments) => this.setState({ comments })}
+                  value={this.state.comments} />
+              </FormGroup>
+
               <Button>Submit</Button>
             </Form>
             <br /><br />
@@ -573,10 +594,10 @@ export default function App() {
         <div>
           <Switch>
             <Route exact path="/">
-              <Page />
+              <Mainpage />
             </Route>
             <Route exact path="/form">
-              <InputForm />
+              <Page />
             </Route>
             <Route exact path="/formdone">
               <FormDone />
