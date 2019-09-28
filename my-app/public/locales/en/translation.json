@@ -4,6 +4,12 @@
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."
   },
-  "id": "User identification",
-  "age-range": "Age range"
+  "user-id": "User identification",
+  "age-range": "Age range",
+  "gender": "Gender",
+  "country": "Country",
+  "primary-language": "Primary language",
+  "employment-status": "Employment status",
+  "discipline": "Discipline",
+  "sensitivity": "How sensitive is your work?"
 }
