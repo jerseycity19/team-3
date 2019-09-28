@@ -1,5 +1,5 @@
 {
-  "title": "Willkommen, um mit react-i18next zu reagieren",
+  "title": "Bienvenue dans notre étude sur l'autocensure!",
   "description": {
     "part1": "Bearbeiten Sie zunächst <1> src / App.js </ 1> und speichern Sie die Datei, um sie neu zu laden.",
     "part2": "Schalten Sie die Sprache zwischen Englisch und Deutsch mit den obigen Tasten um."
@@ -55,5 +55,20 @@
     "somewhat": "Un peu sensible",
     "more": " Plus sensible que la plupart",
     "extremely": "Extrêmement sensible"
-  }
+  },
+  "q1": "Au cours de la dernière année, combien de fois avez-vous auto-censuré votre expression professionnelle?",
+  "q2": "Au cours de la dernière année, combien de personnes que vous connaissez ont dû s'autocensurer?",
+  "q3": "Au cours de la dernière année, avez-vous souvent conseillé à des collègues ou à des étudiants de s'autocensurer?",
+  "q4": "Quelle est la principale source de conséquences que vous craignez qui vous pousserait à vous autocensurer?",
+  "q5": "In the last year, have you experienced any professional, legal, or violent retaliation for your professional expression?",
+  "q6": "Au cours de la dernière année, avez-vous subi des représailles professionnelles, légales ou violentes pour votre expression professionnelle?",
+  "q7": "Par rapport à l’année dernière, êtes-vous plus ou moins susceptible d’autocensurer votre expression professionnelle aujourd’hui?",
+  "q-options": {
+    "never": "Jamais",
+    "sometimes": "quelquefois",
+    "frequently": "Fréquemment",
+    "all-the-time": "Tout le temps"
+  }, 
+  "comments": "Avez-vous d'autres commentaires à formuler sur votre situation?"
+
 }
