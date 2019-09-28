@@ -17,7 +17,7 @@ class Mainpage extends Component {
                     <br/><br/><br/>
                     <p className="text">Many scholars around the world face the serious issue of self-censorship, in which they’re unable to freely express thoughts and ideas for fear of persecution. We’re asking for your help in combating this extremely detrimental effect by simply filling out our survey. You’ll remain completely anonymous, and this data will help us fight against self-censorship worldwide.</p>
                     <br/><br/>
-                    <button href="/form">I understand and agree</button></div>
+                    <Button href="/form">I understand and agree</Button></div>
                     <br/><br/><br/><br/>
                 <CardFooter><FooterComponent/></CardFooter>
             </div>
