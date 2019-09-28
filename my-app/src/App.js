@@ -1,8 +1,10 @@
 import React, { Component, Suspense } from 'react';
 import { useTranslation, withTranslation, Trans } from 'react-i18next';
 import NavigationMenu from './header_footer/header';
-import {Card, CardHeader, CardFooter, CardBody,
-  CardTitle, CardText} from 'reactstrap';
+import {
+  Card, CardHeader, CardFooter, CardBody,
+  CardTitle, CardText
+} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import logo from './logo.svg';
 import SARlogo from './SARlogo.png'
@@ -46,12 +48,6 @@ class IForm extends Component {
     });
   }
 
-  // handleRadioChange = (event) => {
-  //   this.setState({
-  //       [event.target.name]: event.target.value
-  //   });
-  // }
-
   render() {
     const { t, i18n } = this.props;
     const { id, agerange } = this.state;
@@ -59,7 +55,7 @@ class IForm extends Component {
     return (
       <div>
         <h2>{t('title')} YERRRRRRRS</h2>
-        
+
         <Card>
           <CardBody>
             <Form className="div-width">
@@ -132,18 +128,6 @@ class IForm extends Component {
                 </FormGroup>
               </FormGroup>
 
-              {/* <FormGroup>
-                <Label for="exampleSelect"><Trans i18nKey="age-range"></Trans></Label>
-                <Input type="select" name="select" id="exampleSelect">
-                  <option>20-29</option>
-                  <option>30-39</option>
-                  <option>40-49</option>
-                  <option>50-59</option>
-                  <option>60-69</option>
-                  <option>70+</option>
-                </Input>
-              </FormGroup> */}
-
               <FormGroup tag="fieldset">
                 <label><Trans i18nKey="gender"></Trans></label>
                 <FormGroup check>
@@ -171,8 +155,8 @@ class IForm extends Component {
                   </Label>
                 </FormGroup>
               </FormGroup>
-                 
-                  <FormGroup tag="fieldset">
+
+              <FormGroup tag="fieldset">
                 <label><Trans i18nKey="country"></Trans></label>
                 <FormGroup check>
                   <Label check>
@@ -182,13 +166,13 @@ class IForm extends Component {
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="status"/>{' '}
+                    <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="country-options.turkey"></Trans>
                   </Label>
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="status"/>{' '}
+                    <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="country-options.america"></Trans>
                   </Label>
                 </FormGroup>
@@ -200,7 +184,15 @@ class IForm extends Component {
                 </FormGroup>
               </FormGroup>
 
-                <FormGroup tag="fieldset">
+              <FormGroup>
+              <Trans i18nKey="language"></Trans>
+                <Input
+                  style={{}}
+                  onChangeText={(language) => this.setState({ language })}
+                  value={this.state.language} />
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
                 <label><Trans i18nKey="status"></Trans></label>
                 <FormGroup check>
                   <Label check>
@@ -210,13 +202,13 @@ class IForm extends Component {
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="status"/>{' '}
+                    <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="status-options.full-time"></Trans>
                   </Label>
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="status"/>{' '}
+                    <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="status-options.part-time-no-contract"></Trans>
                   </Label>
                 </FormGroup>
@@ -239,7 +231,7 @@ class IForm extends Component {
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="status"/>{' '}
+                    <Input type="radio" name="status" />{' '}
                     <Trans i18nKey="discipline-options.social-sciences"></Trans>
                   </Label>
                 </FormGroup>
@@ -267,7 +259,7 @@ class IForm extends Component {
                 </FormGroup>
                 <FormGroup check>
                   <Label check>
-                    <Input type="radio" name="sensitivity"/>{' '}
+                    <Input type="radio" name="sensitivity" />{' '}
                     <Trans i18nKey="sensitivity-options.somewhat"></Trans>
                   </Label>
                 </FormGroup>
@@ -285,16 +277,217 @@ class IForm extends Component {
                 </FormGroup>
               </FormGroup>
 
-             
-                
-                
-                <Button>Submit</Button>
-            </Form>
-            <br/><br/>
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q1"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
 
-              <CardFooter>
-                <FooterComponent/>
-              </CardFooter>
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q2"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q3"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q4"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q5"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q6"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="q7"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="q-options.never"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.sometimes"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.frequently"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="q-options.all-the-time"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup>
+              <Trans i18nKey="comments"></Trans>
+                <Input
+                  style={{}}
+                  onChangeText={(comments) => this.setState({ comments })}
+                  value={this.state.comments} />
+              </FormGroup>
+
+              <Button>Submit</Button>
+            </Form>
+            <br /><br />
+
+            <CardFooter>
+              <FooterComponent />
+            </CardFooter>
           </CardBody>
         </Card>
       </div>
@@ -302,8 +495,8 @@ class IForm extends Component {
   }
 }
 const InputForm = withTranslation()(IForm);
-    // loading component for suspense fallback
-    const Loader = () => (
+// loading component for suspense fallback
+const Loader = () => (
   <div className="App">
     <img src={logo} className="App-logo" alt="logo" />
     <div>loading...</div>
@@ -326,17 +519,17 @@ class Main extends Component {
   render() {
     return (
       <div className="App">
-          <NavigationMenu />
-          <InputForm />
-          {}
-        </div>
-        )
-      }
-    }
-    
-    // ===========================================PAGES=============================================================
-    
-    // page uses the hook
+        <NavigationMenu />
+        <InputForm />
+        {}
+      </div>
+    )
+  }
+}
+
+// ===========================================PAGES=============================================================
+
+// page uses the hook
 function Page() {
   const { t, i18n } = useTranslation();
 
