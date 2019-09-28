@@ -1,7 +1,9 @@
 //import React from 'react';
 import React, {Component} from 'react';
 import logo from './logo.svg';
+import SARlogo from './SARlogo.png'
 import './App.css';
+import Image from 'react-bootstrap/Image';
 import {
   Col,
   Collapse,
@@ -19,8 +21,15 @@ import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 function NavigationMenu() {
   return (<div>
-<Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+<Navbar color="light"  >
+          <NavbarBrand 
+           href="/">
+           <Image width={100}
+    height={75} src= {SARlogo} />
+    <p style = {{ fontSize: 15 }} >
+      Scholars at Risk
+    </p>
+          </NavbarBrand>
           <NavbarToggler/>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
@@ -99,20 +108,50 @@ class App extends Component {
           </FormGroup>
         </FormGroup>
 
-        <FormGroup>
-          <Label for="exampleSelect">Age Range</Label>
-          <Input type="select" name="select" id="exampleSelect">
-            <option>20-29</option>
-            <option>30-39</option>
-            <option>40-49</option>
-            <option>50-59</option>
-            <option>60-69</option>
-            <option>70+</option>
-          </Input>
+
+
+        <FormGroup tag="fieldset">
+          <legend>Age Range</legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age" />{' '}
+              20-29
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age"  />{' '}
+              30-39
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age"   />{' '}
+              40-49
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age" />{' '}
+              50-59
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age" />{' '}
+              60-69
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="age" />{' '}
+              70+
+            </Label>
+          </FormGroup>
         </FormGroup>
 
         <FormGroup tag="fieldset">
-          <label> Gender</label>
+          <legend>Gender</legend>
           <FormGroup check>
             <Label check>
               <Input type="radio" name="gender" />{' '}
@@ -134,58 +173,172 @@ class App extends Component {
           
         </FormGroup>
 
-        <FormGroup>
-          <Label for="exampleSelect"> Country </Label>
-          <Input type="select" name="country" id="exampleSelect">
-            <option>Asia </option>
-            <option>Europe</option>
-            <option>North America</option>
-            <option>South America</option>
 
-          </Input>
+
+        <FormGroup tag="fieldset">
+          <legend> Country </legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country" />{' '}
+             United States
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"/>{' '}
+             United Kingdom
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              Turkey
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              Canada
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              China
+            </Label>
+          </FormGroup>
+        </FormGroup>
+
+        
+        <FormGroup tag="fieldset">
+          <legend> Employment </legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country" />{' '}
+             Part Time
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"/>{' '}
+             Full Time
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              Part Time Without Contract
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              Full Time Without Contract
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="country"  />{' '}
+              Unemployed
+            </Label>
+          </FormGroup>
+        </FormGroup>
+
+        <FormGroup tag="fieldset">
+          <legend> Discipline Area </legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="discipline" />{' '}
+              Natural Sciences
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="discipline"/>{' '}
+              Social Sciences
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="discipline"  />{' '}
+              Arts and Humanities
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="discipline"  />{' '}
+              Engineering
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="discipline" />{' '}
+              Law/Human Rights
+            </Label>
+          </FormGroup>
         </FormGroup>
 
 
+
+
+
+
+
+
+
+
+
+
+
         <FormGroup>
-        <label> Professional Language</label>
+        <legend> Professional Language</legend>
         <Input
           style={{}}
           onChangeText={(language) => this.setState({ language })}
           value={this.state.language}/>
                     </FormGroup>
 
-                    <FormGroup>
-          <Label for="employment">Employment Status </Label>
-          <Input type="select" name="Employment Status" id="employment">
-            <option>Part-Time </option>
-            <option>Full-Time</option>
-            <option>Part-time & No Contract</option>
-            <option> Unemployed</option>
+                    
 
-          </Input>
-        </FormGroup>
-
-        <FormGroup>
-          <Label for="Disciple"> Discipline Area </Label>
-          <Input type="select" name="disciple" id="Disciple">
-            <option>Natural Sciences</option>
-            <option>Social Sciences</option>
-            <option>Arts and Humanities</option>
-            <option> Engineering</option>
-
-          </Input>
-        </FormGroup>
+      
 
 
-        <FormGroup>
-          <Label for="Sensitivity"> Sensitivity of Work </Label>
-          <Input type="select" name="Sensitivity" id="Sensitivity">
-            <option>Not very sensitive</option>
-            <option>Somewhat sensitive</option>
-            <option>More sensitive than most</option>
-            <option>Extremely sensitive</option>
+        
 
-          </Input>
+
+
+        <FormGroup tag="fieldset">
+          <legend> Sensitivity of Work </legend>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="Sensitivity" />{' '}
+              Not very sensitive
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="Sensitivity"/>{' '}
+              Somewhat sensitive
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="Sensitivity"  />{' '}
+              More sensitive than most
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="Sensitivity"  />{' '}
+              EExtremely sensitive
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="Sensitivity"/>{' '}
+              Law/Human Rights
+            </Label>
+          </FormGroup>
         </FormGroup>
 
 
