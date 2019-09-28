@@ -138,82 +138,82 @@ class IForm extends Component {
                   <Label check>
                     {/* COPY LINE BELOW */}
                     <Input type="radio" name="userid" />{' '}<Trans i18nKey="country-options.china"></Trans></Label>
-                    </FormGroup>
-                  <option><Trans i18nKey="country-options.turkey"></Trans></option>
-                  <option><Trans i18nKey="country-options.america"></Trans></option>
-                  <option><Trans i18nKey="country-options.other"></Trans></option>
                 </FormGroup>
+                <option><Trans i18nKey="country-options.turkey"></Trans></option>
+                <option><Trans i18nKey="country-options.america"></Trans></option>
+                <option><Trans i18nKey="country-options.other"></Trans></option>
+              </FormGroup>
 
-                <FormGroup>
-                  <label><Trans i18nKey="language"></Trans></label>
-                  <Input
-                    style={{}}
-                    onChangeText={(language) => this.setState({ language })}
-                    value={this.state.language} />
-                </FormGroup>
+              <FormGroup>
+                <label><Trans i18nKey="language"></Trans></label>
+                <Input
+                  style={{}}
+                  onChangeText={(language) => this.setState({ language })}
+                  value={this.state.language} />
+              </FormGroup>
 
-                <FormGroup>
-                  <Label for="status">Employment Status </Label>
-                  <Input type="select" name="Employment Status" id="employment">
-                    <option><Trans i18nKey="status-options.part-time"></Trans></option>
-                    <option><Trans i18nKey="status-options.full-time"></Trans></option>
-                    <option><Trans i18nKey="status-options.part-time-no-contract"></Trans></option>
-                    <option><Trans i18nKey="status-options.part-time-unemployed"></Trans></option>
+              <FormGroup>
+                <Label for="status">Employment Status </Label>
+                <Input type="select" name="Employment Status" id="employment">
+                  <option><Trans i18nKey="status-options.part-time"></Trans></option>
+                  <option><Trans i18nKey="status-options.full-time"></Trans></option>
+                  <option><Trans i18nKey="status-options.part-time-no-contract"></Trans></option>
+                  <option><Trans i18nKey="status-options.part-time-unemployed"></Trans></option>
 
-                  </Input>
-                </FormGroup>
+                </Input>
+              </FormGroup>
 
-                <FormGroup>
-                  <Label for="Disciple"><Trans i18nKey="discipline"></Trans></Label>
-                  <Input type="select" name="disciple" id="Disciple">
-                    <option><Trans i18nKey="discipline-options.natural-sciences"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.social-sciences"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.arts-and-humanities"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.engineering"></Trans></option>
+              <FormGroup>
+                <Label for="Disciple"><Trans i18nKey="discipline"></Trans></Label>
+                <Input type="select" name="disciple" id="Disciple">
+                  <option><Trans i18nKey="discipline-options.natural-sciences"></Trans></option>
+                  <option><Trans i18nKey="discipline-options.social-sciences"></Trans></option>
+                  <option><Trans i18nKey="discipline-options.arts-and-humanities"></Trans></option>
+                  <option><Trans i18nKey="discipline-options.engineering"></Trans></option>
 
-                  </Input>
-                </FormGroup>
-                <FormGroup>
-                  <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
-                  <Input type="select" name="Sensitivity" id="Sensitivity">
-                    <option><Trans i18nKey="sensitivity-options.not-very"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.somewhat"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.more"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
-                  </Input>
-                </FormGroup>
-                <Button>Submit</Button>
+                </Input>
+              </FormGroup>
+              <FormGroup>
+                <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
+                <Input type="select" name="Sensitivity" id="Sensitivity">
+                  <option><Trans i18nKey="sensitivity-options.not-very"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.somewhat"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.more"></Trans></option>
+                  <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
+                </Input>
+              </FormGroup>
+              <Button>Submit</Button>
             </Form>
-            <br/><br/>
+            <br /><br />
 
-              <CardFooter>
-                <div className="footer">
-                  <Container>
-                    <Row>
-                      <Col xs="4">ABOUT</Col>
-                      <Col xs="4">THE NETWORK</Col>
-                      <Col xs="4">GET HELP</Col>
-                    </Row>
-                    <Row>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/about/">Mission and History</a></Col>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/the-network/">Partner Networks</a></Col>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/get-help/">Application for Assistance</a></Col>
-                    </Row>
-                    <Row>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/scholars-at-risk-europe/">Geo-location</a></Col>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/sar-sections/">SAR Sections</a></Col>
-                      <Col xs="4"><a href="https://www.scholarsatrisk.org/scholar-resources/">Ressources</a></Col>
-                    </Row>
-                    <br />
-                    <Row>
-                      <Col><p>SAR©2019. All Rights Reserved.</p></Col>
-                    </Row>
-                  </Container>
-                </div>
-              </CardFooter>
+            <CardFooter>
+              <div className="footer">
+                <Container>
+                  <Row>
+                    <Col xs="4">ABOUT</Col>
+                    <Col xs="4">THE NETWORK</Col>
+                    <Col xs="4">GET HELP</Col>
+                  </Row>
+                  <Row>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/about/">Mission and History</a></Col>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/the-network/">Partner Networks</a></Col>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/get-help/">Application for Assistance</a></Col>
+                  </Row>
+                  <Row>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/scholars-at-risk-europe/">Geo-location</a></Col>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/sar-sections/">SAR Sections</a></Col>
+                    <Col xs="4"><a href="https://www.scholarsatrisk.org/scholar-resources/">Ressources</a></Col>
+                  </Row>
+                  <br />
+                  <Row>
+                    <Col><p>SAR©2019. All Rights Reserved.</p></Col>
+                  </Row>
+                </Container>
+              </div>
+            </CardFooter>
           </CardBody>
         </Card>
-          {/* <form>
+        {/* <form>
         <Trans>
           {t('id')}:
           <input type="text" name="name" />
@@ -225,78 +225,82 @@ class IForm extends Component {
         <input type="submit" value="Submit" />
         </form> */}
       </div>
-        );
-      }
-    }
-    const InputForm = withTranslation()(IForm);
-    
+    );
+  }
+}
+const InputForm = withTranslation()(IForm);
+
 function NavigationMenu() {
+  const changeLanguage = lng => {
+    this.props.i18n.changeLanguage(lng);
+  };
+
   return (<div>
-          <Navbar color="light" light expand="lg" >
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
-            <NavbarToggler />
-            <Collapse navbar>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink href='https://www.scholarsatrisk.org/'>SAR Site</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/login">Data Analytics</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/">Donation</NavLink>
-                </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    Language
+    <Navbar color="light" light expand="lg" >
+      <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <NavbarToggler />
+      <Collapse navbar>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink href='https://www.scholarsatrisk.org/'>SAR Site</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/login">Data Analytics</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/">Donation</NavLink>
+          </NavItem>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Language
                 </DropdownToggle>
-                  <DropdownMenu right>
-                    <DropdownItem>
-                      Spanish
+            <DropdownMenu right>
+              <DropdownItem>
+                Spanish
                   </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>
-                      Learning
+              <DropdownItem divider />
+              <DropdownItem>
+                Learning
                   </DropdownItem>
-                    <DropdownItem divider />
-                    <DropdownItem>
-                      Learning
+              <DropdownItem divider />
+              <DropdownItem>
+                Learning
                 </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </div>);
-    }
-    
-    // loading component for suspense fallback
-    const Loader = () => (
+            </DropdownMenu>
+          </UncontrolledDropdown>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  </div>);
+}
+
+// loading component for suspense fallback
+const Loader = () => (
   <div className="App">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div>loading...</div>
-        </div>
-        );
-        
+    <img src={logo} className="App-logo" alt="logo" />
+    <div>loading...</div>
+  </div>
+);
+
 class Main extends Component {
-          constructor(props) {
-          super(props);
-        this.toggle = this.toggle.bind(this);
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
     this.state = {
-          isOpen: false
-      };
-    }
+      isOpen: false
+    };
+  }
   toggle() {
-          this.setState({
-            isOpen: !this.state.isOpen
-          });
-      }
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
       <div className="App">
-          <NavigationMenu />
-          <InputForm />
-          {/* <Form className="div-width">
+        <NavigationMenu t={this.props.t} i18n={this.props.i18n} />
+        <InputForm />
+        {/* <Form className="div-width">
           <FormGroup tag="fieldset">
             <legend>User Identification</legend>
             <FormGroup check>
@@ -534,57 +538,59 @@ class Main extends Component {
             </Label>
             </FormGroup>
           </FormGroup> */}
-        </div>
-        )
-      }
-    }
-    
-    // ===========================================PAGES=============================================================
-    
-    // page uses the hook
+      </div>
+    )
+  }
+}
+
+// ===========================================PAGES=============================================================
+
+// page uses the hook
 function Page() {
-  const {t, i18n} = useTranslation();
-      
+  const { t, i18n } = useTranslation();
+
   const changeLanguage = lng => {
-          i18n.changeLanguage(lng);
-      };
-    
-      return (
+    i18n.changeLanguage(lng);
+  };
+
+  return (
     <div className="App">
-          <button onClick={() => changeLanguage('de')}>de</button>
-          <button onClick={() => changeLanguage('en')}>en</button>
-          <Main t={t} i18n={i18n} />
-          {/* <div>{t('description.part2')}</div> */}
-        </div>
-        );
-      }
-      
-      // here app catches the suspense from page in case translations are not yet loaded
+      <select id="languageSelect" onChange={(e) => changeLanguage(e.target.value)} >
+        <option value="en">English</option>
+        <option value="de">German</option>
+        {/* <option value="C++" onChange={this.change}>C++</option> */}
+      </select>
+      <Main t={t} i18n={i18n} />
+    </div>
+  );
+}
+
+// here app catches the suspense from page in case translations are not yet loaded
 export default function App() {
   return (
     <Suspense fallback={<Loader />}>
-          <Router>
-            <div>
-              <Switch>
-                <Route exact path="/">
-                  <Page />
-                </Route>
-                <Route exact path="/form">
-                  <InputForm />
-                </Route>
-                <Route exact path="/formdone">
-                  <FormDone />
-                </Route>
-                <Route exact path="/login">
-                  <Login />
-                </Route>
-                <Route exact path="/data">
-                  <Data />
-                </Route>
-              </Switch>
-            </div>
-          </Router>
-        </Suspense>
-        );
-      }
-      
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Page />
+            </Route>
+            <Route exact path="/form">
+              <InputForm />
+            </Route>
+            <Route exact path="/formdone">
+              <FormDone />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/data">
+              <Data />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </Suspense>
+  );
+}
+
