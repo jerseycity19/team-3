@@ -14,10 +14,10 @@ uid = 'team3rocks'
 pwd = 'Codeforgood2019'
 con_string ='DRIVER={driver};SERVER={server};DATABASE={database};UID={uid};PWD={pwd}'
 print(con_string)
-#conn = pyodbc.connect(con_string)
+conn = pyodbc.connect(con_string)
 
 
-def idgaf(n):
+def choose(n):
     return rand.choice(range(n))
 
 def meme(a):
@@ -35,9 +35,9 @@ cursor = conn.cursor()
 cursor.execute('SELECT * FROM SARdata.dbo.UserData')
 
 for i in range(100):
-    n = (idgaf(4), idgaf(6), idgaf(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")),
-        rand.choice(("English", "French", "German", "Arabic", "Turkish")), idgaf(5), idgaf(9), idgaf(4),
-        idgaf(4), idgaf(4), idgaf(4), idgaf(8), idgaf(3), idgaf(3), idgaf(3))
+    n = (choose(4), choose(6), choose(3), rand.choice(("Syria", "USA", "Canada", "Germany", "Turkey")),
+        rand.choice(("English", "French", "German", "Arabic", "Turkish")), choose(5), choose(9), choose(4),
+        choose(4), choose(4), choose(4), choose(8), choose(3), choose(3), choose(3))
     cursor.execute('''
                     INSERT INTO SARdata.dbo.UserData (UserID, Age, Gender, Country,
                     primaryLang, employmentStatus, discipline, workSensitivity,
