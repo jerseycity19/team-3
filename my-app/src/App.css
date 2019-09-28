@@ -16,15 +16,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
 }
 .div-width{
-  /* width: 100%; */
-  /* padding: 20px; */
-  margin-right: 10em;
-  margin-left: 10em;
-  /* align-items: center; */
-
+  margin-right: 20em;
+  margin-left: 20em;
+}
+.footer a{
+  text-decoration: none
+}
+.footer a:hover{
+  color:
 }

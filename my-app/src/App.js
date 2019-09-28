@@ -18,24 +18,6 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
-
-function FooterComponent(){
-  return(
-    <div className="footer">
-      <hr/>
-      <Container>
-        <Row>
-          <Col>.col</Col>
-        </Row>
-        <Row>
-          <Col xs="6"></Col>
-          <Col xs="6"></Col>
-        </Row>
-        </Container>
-    </div>
-  )
-}
-
 function NavigationMenu() {
   return (<div>
     <Navbar color="light" light expand="md">
@@ -44,21 +26,27 @@ function NavigationMenu() {
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/components/">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">Partners</NavLink>
+              </NavItem> 
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">Donation</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  Ressources
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    Adcocate
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    Learning
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
@@ -165,7 +153,29 @@ class App extends Component {
       </Form>
       </CardBody>
       <CardFooter>
-        
+      <div className="footer">
+        <Container>
+          <Row>
+            <Col xs="4">ABOUT</Col>
+            <Col xs="4">THE NETWORK</Col>
+            <Col xs="4">GET HELP</Col>
+          </Row>
+          <Row>
+            <Col xs="4"><a href="">Mission and History</a></Col>
+            <Col xs="4"><a href="#">Partner Networks</a></Col>
+            <Col xs="4"><a href="#">Application for Assistance</a></Col>
+          </Row>
+          <Row>
+            <Col xs="4"><a href="#">Geo-location</a></Col>
+            <Col xs="4"><a href="#">SAR Sections</a></Col>  
+            <Col xs="4"><a href="#">Ressources</a></Col>
+          </Row>
+          <br/>
+          <Row>
+            <Col><p>SAR©2019. All Rights Reserved.</p></Col>
+          </Row>
+          </Container>
+      </div>
       </CardFooter>
       </Card>
     </div>
