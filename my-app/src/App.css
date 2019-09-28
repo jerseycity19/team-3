@@ -44,6 +44,17 @@ footer {
   width:400px ;
   height:200px;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link{
   color: #ffffff;
+}
+.text{
+  font-size: 18px;
+}
+.homepage_text{
+  border-radius: 10em;
+  margin-top:10px;
+  margin-left:auto;
+  margin-right:auto;
+  width:700px;
+  text-align:center;
 }
