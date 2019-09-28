@@ -221,11 +221,11 @@ class IForm extends Component {
   }
 }
 const InputForm = withTranslation()(IForm);
-
 function NavigationMenu() {
   return (<div>
+    <img className="logo_img" src={require('./SARlogo.png')} width="500" height="100"/>
     <Navbar color="light" light expand="lg" >
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Scholar At<br/> Risk</NavbarBrand>
           <NavbarToggler/>
           <Collapse navbar>
             <Nav className="ml-auto" navbar>
@@ -251,11 +251,11 @@ function NavigationMenu() {
                   </DropdownItem>
                   <DropdownItem divider />  
                   <DropdownItem>
-                    Learning
+                    French
                   </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Learning
+                    German
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
@@ -420,8 +420,6 @@ class Main extends Component {
             </Label>
           </FormGroup>
         </FormGroup>
-
-        
         <FormGroup tag="fieldset">
           <legend> Employment </legend>
           <FormGroup check>
