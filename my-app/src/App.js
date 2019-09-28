@@ -24,6 +24,9 @@ import {
 } from 'reactstrap';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import Login from './Login';
+import Data from './Data';
+import FormDone from './FormDone';
 
 // ===============================================COMPONENTS=========================================================
 
@@ -181,6 +184,7 @@ class IForm extends Component {
                 </FormGroup>
                 <Button>Submit</Button>
             </Form>
+            <br/><br/>
 
               <CardFooter>
                 <div className="footer">
@@ -191,14 +195,14 @@ class IForm extends Component {
                       <Col xs="4">GET HELP</Col>
                     </Row>
                     <Row>
-                      <Col xs="4"><a href="">Mission and History</a></Col>
-                      <Col xs="4"><a href="#">Partner Networks</a></Col>
-                      <Col xs="4"><a href="#">Application for Assistance</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/about/">Mission and History</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/the-network/">Partner Networks</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/get-help/">Application for Assistance</a></Col>
                     </Row>
                     <Row>
-                      <Col xs="4"><a href="#">Geo-location</a></Col>
-                      <Col xs="4"><a href="#">SAR Sections</a></Col>
-                      <Col xs="4"><a href="#">Ressources</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/scholars-at-risk-europe/">Geo-location</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/sar-sections/">SAR Sections</a></Col>
+                      <Col xs="4"><a href="https://www.scholarsatrisk.org/scholar-resources/">Ressources</a></Col>
                     </Row>
                     <br />
                     <Row>
@@ -234,16 +238,13 @@ function NavigationMenu() {
             <Collapse navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">About</NavLink>
+                  <NavLink href='https://www.scholarsatrisk.org/'>SAR Site</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+                  <NavLink href="/login">Data Analytics</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Partners</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Donation</NavLink>
+                  <NavLink href="/">Donation</NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
@@ -565,21 +566,21 @@ export default function App() {
           <Router>
             <div>
               <Switch>
-                <Route path="/">
+                <Route exact path="/">
                   <Page />
                 </Route>
-                <Route path="/form">
+                <Route exact path="/form">
                   <InputForm />
                 </Route>
-                {/* <Route path="/done">
-            <FormDone />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/data">
-            <DataVisualization />
-          </Route> */}
+                <Route exact path="/formdone">
+                  <FormDone />
+                </Route>
+                <Route exact path="/login">
+                  <Login />
+                </Route>
+                <Route exact path="/data">
+                  <Data />
+                </Route>
               </Switch>
             </div>
           </Router>
