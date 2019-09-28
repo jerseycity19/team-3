@@ -9,6 +9,8 @@ from nltk.classify import ClassifierI
 from statistics import mode
 from nltk.tokenize import word_tokenize
 import re
+from nltk.corpus import stopwords
+import os
 
 files_pos = os.listdir('train/pos')
 files_pos = [open('train/pos/'+f, 'r').read() for f in files_pos]
@@ -18,9 +20,6 @@ files_neg = [open('train/neg/'+f, 'r').read() for f in files_neg]
 
 all_words = []
 documents = []
-
-from nltk.corpus import stopwords
-import re
 
 stop_words = list(set(stopwords.words('english')))
 
@@ -51,7 +50,7 @@ for p in  files_pos:
         if w[1][0] in allowed_word_types:
             all_words.append(w[0].lower())
 
-  for p in files_neg:
+for p in files_neg:
     # create a list of tuples where the first element of each tuple is a review
     # the second element is the label
     documents.append( (p, "neg") )
@@ -105,11 +104,6 @@ print("Classifier accuracy percent:",(nltk.classify.accuracy(classifier, testing
 
 classifier.show_most_informative_features(15)
 
-from nltk.classify.scikitlearn import SklearnClassifier
-from sklearn.naive_bayes import MultinomialNB,BernoulliNB
-from sklearn.linear_model import LogisticRegression,SGDClassifier
-from sklearn.svm import SVC
-
 # training various models by passing in the sklearn models into the SklearnClassifier from NLTK
 
 MNB_clf = SklearnClassifier(MultinomialNB())
@@ -131,8 +125,8 @@ from sklearn.metrics import f1_score, accuracy_score
 ground_truth = [r[1] for r in testing_set]
 predictions = {}
 f1_scores = {}
-f
-or clf, listy in classifiers_dict.items():
+
+for clf, listy in classifiers_dict.items():
     # getting predictions for the testing set by looping over each reviews featureset tuple
     # The first elemnt of the tuple is the feature set and the second element is the label
     predictions[clf] = [listy[0].classify(r[0]) for r in testing_set]
