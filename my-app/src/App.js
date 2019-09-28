@@ -221,7 +221,7 @@ const InputForm = withTranslation()(IForm);
 
 function NavigationMenu() {
   return (<div>
-    <Navbar color="light" light expand="md">
+    <Navbar color="light" light expand="lg" >
           <NavbarBrand href="/">reactstrap</NavbarBrand>
           <NavbarToggler/>
           <Collapse navbar>
@@ -240,19 +240,20 @@ function NavigationMenu() {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Ressources
+                  Language
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Adcocate
+                    Spanish
                   </DropdownItem>
+                  <DropdownItem divider />  
                   <DropdownItem>
                     Learning
                   </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
-                  </DropdownItem>
+                  Learning
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
