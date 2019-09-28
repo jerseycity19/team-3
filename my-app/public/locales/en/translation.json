@@ -56,8 +56,6 @@
     "somewhat": "Somewhat sensitive",
     "more": "More sensitive than most",
     "extremely": "Extremely sensitive"
-  }
-
-
-
+  },
+  "comments": "Do you have any other comments you want to provide about your situation?"
 }

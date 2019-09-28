@@ -26,6 +26,7 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-ro
 import Login from './Login';
 import Data from './Data';
 import FormDone from './FormDone';
+import Mainpage from './Mainpage';
 import FooterComponent from './header_footer/footer';
 
 // ===============================================COMPONENTS=========================================================
@@ -304,24 +305,24 @@ const InputForm = withTranslation()(IForm);
     // loading component for suspense fallback
     const Loader = () => (
   <div className="App">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div>loading...</div>
-        </div>
-        );
-        
+    <img src={logo} className="App-logo" alt="logo" />
+    <div>loading...</div>
+  </div>
+);
+
 class Main extends Component {
-          constructor(props) {
-          super(props);
-        this.toggle = this.toggle.bind(this);
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
     this.state = {
-          isOpen: false
-      };
-    }
+      isOpen: false
+    };
+  }
   toggle() {
-          this.setState({
-            isOpen: !this.state.isOpen
-          });
-      }
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
       <div className="App">
@@ -337,47 +338,50 @@ class Main extends Component {
     
     // page uses the hook
 function Page() {
-  const {t, i18n} = useTranslation();
-      
+  const { t, i18n } = useTranslation();
+
   const changeLanguage = lng => {
-          i18n.changeLanguage(lng);
-      };
-      return (
+    i18n.changeLanguage(lng);
+  };
+
+  return (
     <div className="App">
-          <button onClick={() => changeLanguage('de')}>de</button>
-          <button onClick={() => changeLanguage('en')}>en</button>
-          <Main t={t} i18n={i18n} />
-          {/* <div>{t('description.part2')}</div> */}
-        </div>
-        );
-      }
-      
-      // here app catches the suspense from page in case translations are not yet loaded
+      <select id="languageSelect" onChange={(e) => changeLanguage(e.target.value)} >
+        <option value="en">English</option>
+        <option value="de">German</option>
+        {/* <option value="C++" onChange={this.change}>C++</option> */}
+      </select>
+      <Main t={t} i18n={i18n} />
+    </div>
+  );
+}
+
+// here app catches the suspense from page in case translations are not yet loaded
 export default function App() {
   return (
     <Suspense fallback={<Loader />}>
-          <Router>
-            <div>
-              <Switch>
-                <Route exact path="/">
-                  <Page />
-                </Route>
-                <Route exact path="/form">
-                  <InputForm />
-                </Route>
-                <Route exact path="/formdone">
-                  <FormDone />
-                </Route>
-                <Route exact path="/login">
-                  <Login />
-                </Route>
-                <Route exact path="/data">
-                  <Data />
-                </Route>
-              </Switch>
-            </div>
-          </Router>
-        </Suspense>
-        );
-      }
-      
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Mainpage />
+            </Route>
+            <Route exact path="/form">
+              <Page />
+            </Route>
+            <Route exact path="/formdone">
+              <FormDone />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/data">
+              <Data />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </Suspense>
+  );
+}
+
