@@ -18,7 +18,7 @@ class Login extends Component {
                     <div className="App">
                         <NavigationMenu />
                         <br />
-                        <form className="login_form">
+                        <form>
                             <label>
                                 Username:
                         <input type="text" name="name" /><br />
@@ -27,8 +27,8 @@ class Login extends Component {
                                 Password:
                     		<input type="password" name="name" /><br />
                             </label><br />
-                            <button href="/data"> Login </button>
-                        </form>
+                            </form>
+                            <a href="/data"><button> Login </button></a>
                     </div>
                 </CardBody>
                 <CardFooter><FooterComponent className="footer" /></CardFooter>
