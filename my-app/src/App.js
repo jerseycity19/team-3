@@ -224,51 +224,51 @@ const InputForm = withTranslation()(IForm);
 
 function NavigationMenu() {
   return (<div>
-<Navbar color="light"  >
-          <NavbarBrand 
-           href="/">
-           <Image width={100}
-    height={75} src= {SARlogo} />
-    <p style = {{ fontSize: 15 }} >
-      Scholars at Risk
+    <Navbar color="light"  >
+      <NavbarBrand
+        href="/">
+        <Image width={100}
+          height={75} src={SARlogo} />
+        <p style={{ fontSize: 15 }} >
+          Scholars at Risk
     </p>
-          </NavbarBrand>
-          <NavbarToggler/>
-          <Collapse navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">About</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Partners</NavLink>
-              </NavItem> 
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Donation</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Ressources
+      </NavbarBrand>
+      <NavbarToggler />
+      <Collapse navbar>
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+            <NavLink href="/components/">About</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">Partners</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="https://github.com/reactstrap/reactstrap">Donation</NavLink>
+          </NavItem>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Ressources
                 </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Adcocate
+            <DropdownMenu right>
+              <DropdownItem>
+                Adcocate
                   </DropdownItem>
-                  <DropdownItem>
-                    Learning
+              <DropdownItem>
+                Learning
                   </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
+              <DropdownItem divider />
+              <DropdownItem>
+                Reset
                   </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>);
+            </DropdownMenu>
+          </UncontrolledDropdown>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  </div>);
 }
 
 // loading component for suspense fallback
@@ -294,309 +294,252 @@ class Main extends Component {
   }
   render() {
     return (
-    <div className="App">
-      <NavigationMenu/>
-      
-      <Form className="div-width">
-      <FormGroup tag="fieldset">
-          <legend>User Identification</legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="userid" />{' '}
-             Scholar
+      <div className="App">
+        <NavigationMenu />
+
+        <Form className="div-width">
+          <FormGroup tag="fieldset">
+            <legend>User Identification</legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Scholar
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="userid" />{' '}
-              Student
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Student
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="userid"  />{' '}
-              Administrator
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Administrator
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="userid"/>{' '}
-              Non-University
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="userid" />{' '}
+                Non-University
             </Label>
+            </FormGroup>
           </FormGroup>
-        </FormGroup>
+
+          <FormGroup tag="fieldset">
+            <legend>Age Range</legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                20-29
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                30-39
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                40-49
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                50-59
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                60-69
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="age" />{' '}
+                70+
+            </Label>
+            </FormGroup>
+          </FormGroup>
+
+          <FormGroup tag="fieldset">
+            <legend>Gender</legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="gender" />{' '}
+                Male
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="gender" />{' '}
+                Femal
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="gender" />{' '}
+                Non-Binary
+            </Label>
+            </FormGroup>
+
+          </FormGroup>
 
 
 
-        <FormGroup tag="fieldset">
-          <legend>Age Range</legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age" />{' '}
-              20-29
+          <FormGroup tag="fieldset">
+            <legend> Country </legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                United States
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age"  />{' '}
-              30-39
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                United Kingdom
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age"   />{' '}
-              40-49
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Turkey
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age" />{' '}
-              50-59
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Canada
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age" />{' '}
-              60-69
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                China
             </Label>
+            </FormGroup>
           </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="age" />{' '}
-              70+
-            </Label>
-          </FormGroup>
-        </FormGroup>
-
-        <FormGroup tag="fieldset">
-          <legend>Gender</legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="gender" />{' '}
-             Male
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="gender"  />{' '}
-             Femal
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="gender"  />{' '}
-              Non-Binary
-            </Label>
-          </FormGroup>
-          
-        </FormGroup>
 
 
-
-        <FormGroup tag="fieldset">
-          <legend> Country </legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country" />{' '}
-             United States
+          <FormGroup tag="fieldset">
+            <legend> Employment </legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Part Time
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"/>{' '}
-             United Kingdom
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Full Time
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              Turkey
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Part Time Without Contract
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              Canada
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Full Time Without Contract
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              China
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="country" />{' '}
+                Unemployed
             </Label>
+            </FormGroup>
           </FormGroup>
-        </FormGroup>
 
-        
-        <FormGroup tag="fieldset">
-          <legend> Employment </legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country" />{' '}
-             Part Time
+          <FormGroup tag="fieldset">
+            <legend> Discipline Area </legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="discipline" />{' '}
+                Natural Sciences
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"/>{' '}
-             Full Time
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="discipline" />{' '}
+                Social Sciences
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              Part Time Without Contract
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="discipline" />{' '}
+                Arts and Humanities
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              Full Time Without Contract
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="discipline" />{' '}
+                Engineering
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="country"  />{' '}
-              Unemployed
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="discipline" />{' '}
+                Law/Human Rights
             </Label>
+            </FormGroup>
           </FormGroup>
-        </FormGroup>
 
-        <FormGroup tag="fieldset">
-          <legend> Discipline Area </legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="discipline" />{' '}
-              Natural Sciences
+          <FormGroup>
+            <legend> Professional Language</legend>
+            <Input
+              style={{}}
+              onChangeText={(language) => this.setState({ language })}
+              value={this.state.language} />
+          </FormGroup>
+
+          <FormGroup tag="fieldset">
+            <legend> Sensitivity of Work </legend>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="Sensitivity" />{' '}
+                Not very sensitive
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="discipline"/>{' '}
-              Social Sciences
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="Sensitivity" />{' '}
+                Somewhat sensitive
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="discipline"  />{' '}
-              Arts and Humanities
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="Sensitivity" />{' '}
+                More sensitive than most
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="discipline"  />{' '}
-              Engineering
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="Sensitivity" />{' '}
+                EExtremely sensitive
             </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="discipline" />{' '}
-              Law/Human Rights
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="Sensitivity" />{' '}
+                Law/Human Rights
             </Label>
+            </FormGroup>
           </FormGroup>
-        </FormGroup>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <FormGroup>
-        <legend> Professional Language</legend>
-        <Input
-          style={{}}
-          onChangeText={(language) => this.setState({ language })}
-          value={this.state.language}/>
-                    </FormGroup>
-
-                    
-
-      
-
-
-        
-
-
-
-        <FormGroup tag="fieldset">
-          <legend> Sensitivity of Work </legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="Sensitivity" />{' '}
-              Not very sensitive
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="Sensitivity"/>{' '}
-              Somewhat sensitive
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="Sensitivity"  />{' '}
-              More sensitive than most
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="Sensitivity"  />{' '}
-              EExtremely sensitive
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="Sensitivity"/>{' '}
-              Law/Human Rights
-            </Label>
-          </FormGroup>
-        </FormGroup>
         </Form>
-        </div>
+      </div>
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ===========================================PAGES=============================================================
 
@@ -623,15 +566,15 @@ export default function App() {
   return (
     <Suspense fallback={<Loader />}>
       <Router>
-      <div>
-        <Switch>
-          <Route path="/">
-            <Page />
-          </Route>
-          <Route path="/form">
-            <InputForm />
-          </Route>
-          {/* <Route path="/done">
+        <div>
+          <Switch>
+            <Route path="/">
+              <Page />
+            </Route>
+            <Route path="/form">
+              <InputForm />
+            </Route>
+            {/* <Route path="/done">
             <FormDone />
           </Route>
           <Route path="/login">
@@ -640,9 +583,9 @@ export default function App() {
           <Route path="/data">
             <DataVisualization />
           </Route> */}
-        </Switch>
-      </div>
-    </Router>
+          </Switch>
+        </div>
+      </Router>
     </Suspense>
   );
 }
