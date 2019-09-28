@@ -47,38 +47,38 @@ class IForm extends Component {
 
     return (
       <div>
-        <h2>{t('title')}YERRRRRRRS</h2>
+        <h2>{t('title')} YERRRRRRRS</h2>
         <Form className="div-width">
           <FormGroup tag="fieldset">
-            <legend>User Identification</legend>
+            <legend><Trans i18nKey="user-id"></Trans></legend>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="userid" />{' '}
-                Scholar
+                <Trans i18nKey="user.scholar"></Trans>
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="userid" />{' '}
-                Student
+                <Trans i18nKey="user.student"></Trans>
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="userid" />{' '}
-                Administrator
+                <Trans i18nKey="user.administrator"></Trans>
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="userid" />{' '}
-                Non-University
+                <Trans i18nKey="user.non-university"></Trans>
             </Label>
             </FormGroup>
           </FormGroup>
 
           <FormGroup>
-            <Label for="exampleSelect">Age Range</Label>
+            <Label for="exampleSelect"><Trans i18nKey="age-range"></Trans></Label>
             <Input type="select" name="select" id="exampleSelect">
               <option>20-29</option>
               <option>30-39</option>
@@ -90,42 +90,46 @@ class IForm extends Component {
           </FormGroup>
 
           <FormGroup tag="fieldset">
-            <label> Gender</label>
+            <label><Trans i18nKey="gender"></Trans></label>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="gender" />{' '}
-                Male
+                <Trans i18nKey="gender-options.male"></Trans>
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="gender" />{' '}
-                Femal
+                <Trans i18nKey="gender-options.female"></Trans>
             </Label>
             </FormGroup>
             <FormGroup check>
               <Label check>
                 <Input type="radio" name="gender" />{' '}
-                Non-Binary
+                <Trans i18nKey="gender-options.non-binary"></Trans>
+            </Label>
+            </FormGroup>
+            <FormGroup check>
+              <Label check>
+                <Input type="radio" name="gender" />{' '}
+                <Trans i18nKey="gender-options.other"></Trans>
             </Label>
             </FormGroup>
 
           </FormGroup>
 
           <FormGroup>
-            <Label for="exampleSelect"> Country </Label>
+            <Label for="exampleSelect"><Trans i18nKey="country"></Trans></Label>
             <Input type="select" name="country" id="exampleSelect">
-              <option>Asia </option>
-              <option>Europe</option>
-              <option>North America</option>
-              <option>South America</option>
-
+              <option><Trans i18nKey="country-options.china"></Trans></option>
+              <option><Trans i18nKey="country-options.turkey"></Trans></option>
+              <option><Trans i18nKey="country-options.america"></Trans></option>
+              <option><Trans i18nKey="country-options.other"></Trans></option>
             </Input>
           </FormGroup>
 
-
           <FormGroup>
-            <label> Professional Language</label>
+            <label><Trans i18nKey="language"></Trans></label>
             <Input
               style={{}}
               onChangeText={(language) => this.setState({ language })}
@@ -133,33 +137,33 @@ class IForm extends Component {
           </FormGroup>
 
           <FormGroup>
-            <Label for="employment">Employment Status </Label>
+            <Label for="status">Employment Status </Label>
             <Input type="select" name="Employment Status" id="employment">
-              <option>Part-Time </option>
-              <option>Full-Time</option>
-              <option>Part-time & No Contract</option>
-              <option> Unemployed</option>
+              <option><Trans i18nKey="status-options.part-time"></Trans></option>
+              <option><Trans i18nKey="status-options.full-time"></Trans></option>
+              <option><Trans i18nKey="status-options.part-time-no-contract"></Trans></option>
+              <option><Trans i18nKey="status-options.part-time-unemployed"></Trans></option>
 
             </Input>
           </FormGroup>
 
           <FormGroup>
-            <Label for="Disciple"> Discipline Area </Label>
+            <Label for="Disciple"><Trans i18nKey="discipline"></Trans></Label>
             <Input type="select" name="disciple" id="Disciple">
-              <option>Natural Sciences</option>
-              <option>Social Sciences</option>
-              <option>Arts and Humanities</option>
-              <option> Engineering</option>
+              <option><Trans i18nKey="discipline-options.natural-sciences"></Trans></option>
+              <option><Trans i18nKey="discipline-options.social-sciences"></Trans></option>
+              <option><Trans i18nKey="discipline-options.arts-and-humanities"></Trans></option>
+              <option><Trans i18nKey="discipline-options.engineering"></Trans></option>
 
             </Input>
           </FormGroup>
           <FormGroup>
-            <Label for="Sensitivity"> Sensitivity of Work </Label>
+            <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
             <Input type="select" name="Sensitivity" id="Sensitivity">
-              <option>Not very sensitive</option>
-              <option>Somewhat sensitive</option>
-              <option>More sensitive than most</option>
-              <option>Extremely sensitive</option>
+              <option><Trans i18nKey="sensitivity-options.not-very"></Trans></option>
+              <option><Trans i18nKey="sensitivity-options.somewhat"></Trans></option>
+              <option><Trans i18nKey="sensitivity-options.more"></Trans></option>
+              <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
             </Input>
           </FormGroup>
           <Button>Submit</Button>
@@ -261,9 +265,9 @@ function Page() {
 
   return (
     <div className="App">
-      <Main t={t} i18n={i18n} />
       <button onClick={() => changeLanguage('de')}>de</button>
       <button onClick={() => changeLanguage('en')}>en</button>
+      <Main t={t} i18n={i18n} />
       {/* <div>{t('description.part2')}</div> */}
     </div>
   );
