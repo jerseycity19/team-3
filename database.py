@@ -42,6 +42,9 @@ for _ in range(100):
 print(list)
 
 
+#SQL was giving us issues, so we couldn't implement it fully
+#we instead have a list that we can write to a file
+
 # cursor = conn.cursor()
 # cursor.execute('SELECT * FROM SARdata.dbo.UserData')
 #
