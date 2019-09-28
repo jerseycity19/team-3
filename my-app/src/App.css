@@ -3,28 +3,26 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
-
 .App-link {
   color: #09d3ac;
 }
 .div-width{
-  /* width: 100%; */
-  /* padding: 20px; */
-  margin-right: 10em;
-  margin-left: 10em;
-  /* align-items: center; */
-
+  margin-right: 20em;
+  margin-left: 20em;
+}
+.footer a{
+  text-decoration: none
+}
+.footer a:hover{
+  color:
 }
