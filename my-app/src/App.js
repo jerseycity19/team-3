@@ -48,12 +48,14 @@ class InputForm extends Component {
           <input type="text" name="name" />
           </label> */}
           <Trans>
-          {t('id')}
-          <input type="text" name="name" onChange={this.handleChange}>{id}</input>
+          {t('id')}:
+          {/* <input type="text" name="name" value={id} onChange={this.handleChange}/> */}
+          <input type="text" name="name"/>
           </Trans>
           <Trans>
-          {t('age-range')}
-          <input type="text" name="name" onChange={this.handleChange}>{agerange}</input>
+          {t('age-range')}:
+          {/* <input type="text" name="age-range" value={agerange} onChange={this.handleChange}/> */}
+          <input type="text" name="age-range"/>
           </Trans>
           <input type="submit" value="Submit" />
         </form>
