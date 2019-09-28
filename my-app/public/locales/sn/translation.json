@@ -1,0 +1,63 @@
+{
+  "title": "Bienvenido a reaccionar usando react-i18next",
+  "description": {
+    "part1": "Para comenzar, edite <1> src / App.js </1> y guárdelo para volver a cargar.",
+    "part2": "Cambie el idioma entre inglés y alemán con los botones de arriba."
+  },
+  "user-id": "Identificación de usuario",
+  "user": {
+    "scholar": "Erudita",
+    "student": "Estudiante",
+    "administrator": "Administradora",
+    "non-university": "no universitaria"
+  },
+  "age-range": "Rango de edad",
+  "age-options": {
+    "twenties": "20-29",
+    "thirties": "30-39",
+    "forties": "40-49",
+    "fifties":"50-59",
+    "sixties":"60-69",
+    "other": "70+"
+
+  },
+  "gender": "Género",
+  "gender-options": {
+    "male": "Masculina",
+    "female": "Hembra",
+    "non-binary": "No binario",
+    "other": "Otra"
+  },
+  "country": "País",
+  "country-options": {
+    "china": "China",
+    "turkey": "Turkey",
+    "america": "USA",
+    "other": "Other"
+  },
+  "language": "Lenguaje primario",
+  "status": "Estado de Empleo",
+  "status-options": {
+    "part-time": "Medio tiempo",
+    "full-time": "Tiempo completo",
+    "part-time-no-contract": "A tiempo parcial y sin contrato",
+    "unemployed": "Desempleadas"
+  },
+  "discipline": "Discipline",
+  "discipline-options": {
+    "natural-sciences": "Ciencias Naturales",
+    "social-sciences": "Ciencias Sociales",
+    "arts-and-humanities": "Artes y Humanidades",
+    "engineering": "Ingenieria"
+  },
+  "sensitivity": "Cuán sensible es tu trabajo?",
+  "sensitivity-options": {
+    "not-very": "Poco sensible",
+    "somewhat": "Algo sensible",
+    "more": "Más sensible que la mayoría",
+    "extremely": "Extremadamente sensitivo"
+  }
+
+
+
+}
