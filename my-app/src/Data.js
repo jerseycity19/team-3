@@ -8,7 +8,9 @@ class Data extends Component {
     render() {
         return (
             <div>
-                <p>INSERT DATA STUFF HERE</p>
+                <div>
+                    
+                </div>
             </div>
         );
     }
