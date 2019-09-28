@@ -58,6 +58,7 @@ class IForm extends Component {
     return (
       <div>
         <h2>{t('title')} YERRRRRRRS</h2>
+        
         <Card>
           <CardBody>
             <Form className="div-width">
@@ -89,7 +90,48 @@ class IForm extends Component {
                 </FormGroup>
               </FormGroup>
 
-              <FormGroup>
+
+              <FormGroup tag="fieldset">
+                <legend><Trans i18nKey="age-range"></Trans></legend>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.twenties"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.thirties"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.forties"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.fifties"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.sixties"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="age" />{' '}
+                    <Trans i18nKey="age-options.other"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              {/* <FormGroup>
                 <Label for="exampleSelect"><Trans i18nKey="age-range"></Trans></Label>
                 <Input type="select" name="select" id="exampleSelect">
                   <option>20-29</option>
@@ -99,7 +141,7 @@ class IForm extends Component {
                   <option>60-69</option>
                   <option>70+</option>
                 </Input>
-              </FormGroup>
+              </FormGroup> */}
 
               <FormGroup tag="fieldset">
                 <label><Trans i18nKey="gender"></Trans></label>
@@ -127,61 +169,124 @@ class IForm extends Component {
                     <Trans i18nKey="gender-options.other"></Trans>
                   </Label>
                 </FormGroup>
-
               </FormGroup>
-
-              <FormGroup>
-                <Label for="exampleSelect"><Trans i18nKey="country"></Trans></Label>
-                {/* <Input type="select" name="country" id="exampleSelect"> */}
-
+                 
+                  <FormGroup tag="fieldset">
+                <label><Trans i18nKey="country"></Trans></label>
                 <FormGroup check>
                   <Label check>
-                    {/* COPY LINE BELOW */}
-                    <Input type="radio" name="userid" />{' '}<Trans i18nKey="country-options.china"></Trans></Label>
-                    </FormGroup>
-                  <option><Trans i18nKey="country-options.turkey"></Trans></option>
-                  <option><Trans i18nKey="country-options.america"></Trans></option>
-                  <option><Trans i18nKey="country-options.other"></Trans></option>
+                    <Input type="radio" name="country" />
+                    <Trans i18nKey="country-options.china"></Trans>
+                  </Label>
                 </FormGroup>
-
-                <FormGroup>
-                  <label><Trans i18nKey="language"></Trans></label>
-                  <Input
-                    style={{}}
-                    onChangeText={(language) => this.setState({ language })}
-                    value={this.state.language} />
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status"/>{' '}
+                    <Trans i18nKey="country-options.turkey"></Trans>
+                  </Label>
                 </FormGroup>
-
-                <FormGroup>
-                  <Label for="status">Employment Status </Label>
-                  <Input type="select" name="Employment Status" id="employment">
-                    <option><Trans i18nKey="status-options.part-time"></Trans></option>
-                    <option><Trans i18nKey="status-options.full-time"></Trans></option>
-                    <option><Trans i18nKey="status-options.part-time-no-contract"></Trans></option>
-                    <option><Trans i18nKey="status-options.part-time-unemployed"></Trans></option>
-
-                  </Input>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status"/>{' '}
+                    <Trans i18nKey="country-options.america"></Trans>
+                  </Label>
                 </FormGroup>
-
-                <FormGroup>
-                  <Label for="Disciple"><Trans i18nKey="discipline"></Trans></Label>
-                  <Input type="select" name="disciple" id="Disciple">
-                    <option><Trans i18nKey="discipline-options.natural-sciences"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.social-sciences"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.arts-and-humanities"></Trans></option>
-                    <option><Trans i18nKey="discipline-options.engineering"></Trans></option>
-
-                  </Input>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />{' '}
+                    <Trans i18nKey="country-options.other"></Trans>
+                  </Label>
                 </FormGroup>
-                <FormGroup>
-                  <Label for="Sensitivity"><Trans i18nKey="sensitivity"></Trans></Label>
-                  <Input type="select" name="Sensitivity" id="Sensitivity">
-                    <option><Trans i18nKey="sensitivity-options.not-very"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.somewhat"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.more"></Trans></option>
-                    <option><Trans i18nKey="sensitivity-options.extremely"></Trans></option>
-                  </Input>
+              </FormGroup>
+
+                <FormGroup tag="fieldset">
+                <label><Trans i18nKey="status"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />
+                    <Trans i18nKey="status-options.part-time"></Trans>
+                  </Label>
                 </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status"/>{' '}
+                    <Trans i18nKey="status-options.full-time"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status"/>{' '}
+                    <Trans i18nKey="status-options.part-time-no-contract"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />{' '}
+                    <Trans i18nKey="status-options.unemployed"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="discipline"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />
+                    <Trans i18nKey="discipline-options.natural-sciences"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status"/>{' '}
+                    <Trans i18nKey="discipline-options.social-sciences"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />{' '}
+                    <Trans i18nKey="discipline-options.arts-and-humanities"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="status" />{' '}
+                    <Trans i18nKey="discipline-options.engineering"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+              <FormGroup tag="fieldset">
+                <label><Trans i18nKey="sensitivity"></Trans></label>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />
+                    <Trans i18nKey="sensitivity-options.not-very"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity"/>{' '}
+                    <Trans i18nKey="sensitivity-options.somewhat"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="sensitivity-options.more"></Trans>
+                  </Label>
+                </FormGroup>
+                <FormGroup check>
+                  <Label check>
+                    <Input type="radio" name="sensitivity" />{' '}
+                    <Trans i18nKey="sensitivity-options.extremely"></Trans>
+                  </Label>
+                </FormGroup>
+              </FormGroup>
+
+             
+                
+                
                 <Button>Submit</Button>
             </Form>
             <br/><br/>
@@ -191,7 +296,6 @@ class IForm extends Component {
               </CardFooter>
           </CardBody>
         </Card>
-          {}
       </div>
     );
   }
