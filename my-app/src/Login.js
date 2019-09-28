@@ -24,8 +24,8 @@ class Login extends Component {
                     <label>
                         Password:
                     <input type="password" name="name" /><br/>
-                    </label><br/    >
-                    <Button color="success">Submit</Button>    
+                    </label><br/>
+                    <a href="/data"><Button>Login</Button></a> 
                 </form>
                 </div>
             </CardBody>
