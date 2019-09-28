@@ -1,13 +1,13 @@
 import pyodbc
 import random as rand
 
-def idgaf(int n):
+def idgaf(n):
     return rand.choice(range(n))
 
-def meme(int a):
+def meme(a):
     return (3 * a^2 - 7 * a + 4)/2
 
-def metric(int x1, int x2, int x3, int x4, int x5, int x6, int x7):
+def metric(x1, x2,  x3,  x4,  x5,  x6,  x7):
     return sum(x1/3, x2/3, x3/3, meme(x5)/2, meme(x6)/2, meme(x7)/2)    
 
 conn = pyodbc.connect('Driver={SQL Server};'
